@@ -1,0 +1,28 @@
+<div class="box">
+	<div class="box-header">
+		<h2>
+			<i class="icon-lock"></i><span class="break"></span>
+			Accedi
+		</h2>
+	</div>
+	<div class="box-content">
+		<%= simple_form_for resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="inputs">
+    <%= f.input :username, :required => false, :autofocus => true %>
+    <%= f.input :password, :required => false %>
+    <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Accedi" %>
+    <br />
+     <%= render "links" %>
+
+  </div>
+<% end %>
+
+
+	</div>
+</div>
+

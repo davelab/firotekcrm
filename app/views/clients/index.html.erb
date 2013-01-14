@@ -1,0 +1,71 @@
+<%- model_class = Client -%>
+
+<%= link_to t('.new', :default => t("helpers.links.nuovo")),
+            new_client_path,
+            :class => 'btn btn-primary' %>
+
+
+<div class="box">
+<div class="box-header">
+
+  <h2> 
+      <i class="icon-user"></i>
+      <span class="break"></span>
+    <%=t '.title', :default => model_class.model_name.human.pluralize %>
+  </h2>
+</div>
+<div class="box-content">
+<table class="table table-striped table-bordered datatable">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:mobile) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:company) %></th>
+      <th>Indirizzo</th>
+      <th>Regione</th>
+      <th><%= model_class.human_attribute_name(:status) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+ 
+        <td><%= link_to client.full_name, client_path(client), {remote: true, 'data-toggle' => 'modal', 'data-target' => "#modal-window"}  %></td>
+        <td><%= client.mobile %></td>
+        <td>
+          <%= mail_to client.email %>
+        </td>
+        <td>
+   
+             
+              <% client.companies.each do |company| %>
+              <%= link_to company.name, company_path(company) %>
+              <% end %>
+                
+            
+           
+        </td>
+        
+        <td><%= client.full_address if client.address? %></td>
+        <td><%= client.region %></td>
+        <td><span class="label label-<%= client.status.downcase %>"><%= client.status %></span></td>
+
+
+        <td>
+          <%= link_to t('.edit', :default => link_icon("edit")),
+                      edit_client_path(client), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      client_path(client),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+</div>

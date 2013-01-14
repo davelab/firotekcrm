@@ -1,0 +1,54 @@
+<%= simple_form_for @company, :html => { :class => 'form-horizontal' } do |f| %>
+
+<div class="row-fluid">    
+    <div class="span8"><%= f.input :name, label: "Nome", input_html: {:class => "span6"} %></div>
+    <div class="span3"><%= f.input :is_global_service, label: "Azienda appaltatrice" %></div>
+</div>
+
+<div class="row">
+    <div class="span4"><%= f.input :address, label: "Indirizzo", input_html: {:class => "input-xlarge"} %></div>
+    <div class="span2"><%= f.input :cap, input_html: {:class => "span1"}  %></div>
+    <div class="span3"><%= f.input :city, label: "Città"%></div>
+</div>
+<div class="row">
+  <div class="span5"><%= f.input :region, :collection => regions, label: "Regione"%></div>
+</div>
+
+<hr>
+<div class="row">
+    <div class="span6  vertical-row-r">
+      <%= f.input :phone,label: "Telefono" %>
+        <%= f.input :mobile, label: "Mobile" %>
+        <%= f.input :fax %>
+        <%= f.input :email %>
+        <%= f.input :website, placeholder: "http://" %>
+    </div>
+    <div class="span5">
+
+    <%= f.association :category, :as => :select, label: "Categoria" %>
+
+    <%= 
+      f.association :clients, 
+      :collection => Client.all(order: :surname),
+      label_method: :full_name,
+      label: "Referenti Associati"
+    %>
+
+    <%= 
+      f.association :associated_company, 
+      :collection => Company.global_services(order: :name),
+      label: "Aziende Associate"
+    %>
+  </div>
+</div>
+
+
+  
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                companies_path, :class => 'btn' %>
+  </div>
+
+  
+<% end %>

@@ -1,0 +1,42 @@
+<%= simple_form_for @client, :html => { :class => 'form-horizontal' } do |f| %>
+<div class="row">
+  <div class="span5"><%= f.input :name, label: "Nome", input_html: {class: "span4"} %></div>
+  <div class="span5"><%= f.input :surname, label: "Cognome", input_html: {class: "span4"} %></div>
+</div>
+  <div class="row">
+    <div class="span5 ">
+      <%= f.input :mobile %>
+      <%= f.input :email %>
+    </div>
+
+    <div class="span4">
+        
+        <div class="row"><div class="span3"><%= f.input :address, label: "Indirizzo" %></div>
+                <div class="span1"><%= f.input :cap, input_html: {class: "input-mini"} %></div></div>
+        <%= f.input :city, label: "Città" %>
+        <%= f.input :region, :collection => regions, label: "Regione"%>
+    </div>
+  </div>
+
+    <%= f.input :status , :collection => ["WARM", "COLD"], as: :select %>
+	<%= 
+		f.association :companies, 
+		:collection => Company.all(:order => 'name'),
+    :input_html => { :multiple => false },
+    label: "Azienda"
+	%>
+
+    <%= 
+    f.input :user, :as => :select,
+    :collection => User.all(:order => 'username'),
+    label: "Venditore Associato"
+  %>
+
+
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                clients_path, :class => 'btn' %>
+  </div>
+<% end %>

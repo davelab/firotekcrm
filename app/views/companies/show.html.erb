@@ -1,0 +1,159 @@
+<%- model_class = Company -%>
+
+<!-- HEAD -->
+<h3>
+  <%= raw "<span style='font-weight:200'>Azienda:</span> #{@company.name}" %>
+  
+  <%= link_to_if @company.website?, link_icon("home"), @company.website, target: '_blank' %>
+
+
+  <div class="pull-right">
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+                companies_path, :class => 'btn btn-small'  %>
+    <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                edit_company_path(@company), :class => 'btn btn-small' %>
+    <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                company_path(@company),
+                :method => 'delete',
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Sei sicuro?')) },
+                :class => 'btn btn-small btn-danger' %>
+  </div>
+</h3>
+
+  <%= raw "<span class='label label-info'>Global Service</span>" if @company.is_global_service? %>
+
+<hr>
+<!--  END HEAD -->
+ <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#company-details" data-toggle="tab"><h3><i class="icon-briefcase"></i></h3></a></li>
+        <li><a href="#note-details" data-toggle="tab"><h3><i class="icon-pushpin"></i></h3></a></li>
+</ul>
+
+<div id="company-tab-content" class="tab-content">
+
+<!-- COMPANY DETAILS -->
+<div id="company-details" class="tab-pane active">
+<!--  Box profilo aziendale -->
+  <div class="row-fluid">
+  <div class="box span6">
+  <div class="box-header">  
+    <h2>
+      <i class="icon-group"></i>
+      <span class="break"></span>
+      Profilo Aziendale
+    </h2>
+  </div>
+    <div class="box-content">
+<dl class="dl-horizontal">
+        <dt><strong>Categoria:</strong></dt>
+        <dd><%=t @company.category.name %></dd>    
+        <dt><strong>Indirizzo:</strong></dt>
+        <dd><%= @company.full_address %></dd>
+        <%= show_non_blank_field('Regione', @company.region) %>
+        <dt><strong>email:</strong></dt>
+        <dd><%= mail_to @company.email %></dd>
+
+        <%= show_non_blank_field('Telefono', number_to_phone(@company.phone)) %>
+        <%= show_non_blank_field('Mobile', number_to_phone(@company.mobile)) %>
+        <%= show_non_blank_field('Fax', number_to_phone(@company.fax)) %>
+      </dl> 
+    <!-- Visualizza la mappa solo se è presente l'indirizzo -->
+    <%= gmaps({ "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 }, "markers"  => {"data" => @mapCompany } }) if @company.address? %>
+
+      
+     
+
+    </div>
+  </div>
+  <!-- END Box profilo aziendale -->
+
+  <!-- Box Clienti di riferimento -->
+  <div class="box span6" id="client_references">
+    <div class="box-header">
+      <h2>
+        <i class="icon-user"></i><span class="break"></span>
+        Referenti
+      </h2>
+
+      <div class="box-icon"><%= link_to link_icon("plus"), new_client_path %></div>
+    </div>
+    <div class="box-content">
+     <table class="table">
+       
+         
+
+      <% @company.clients.each do |client| %>
+         <tr>
+          <td><%= link_to client.full_name, client_path(client) %></td>
+          <td><i class="icon-phone"></i> <%= number_to_phone(client.mobile) %> </td>
+          <td><i class="icon-envelope"></i> <%= mail_to client.email %></td>
+        </tr>
+      <% end %>
+       
+     </table>
+    </div>
+  </div>
+  <!-- END Clienti di riferimento -->
+
+  <!-- Box Global Services -->
+
+    <div class="box span6" id="global_services">
+      <div class="box-header">
+        <h2>
+          <i class="icon-globe"></i><span class="break"></span>
+         Aziende associate
+        </h2>
+      </div>
+      <div class="box-content">
+        <ul class="record-list">
+      <% unless @company.is_global_service? %>
+        <% @company.associated_company.each do |company_global_service| %>
+          <li> 
+           <%= link_to company_global_service.name, company_path(company_global_service) %> 
+          </li>
+        <% end %>
+      <% else %>
+          <% for company in @company.inverse_associated_company %>
+            <li><%= link_to company.name, company_path(company) %></li>
+          <% end %>
+      <% end %>
+      </ul>
+      </div>
+    </div>
+
+  <!-- END Box Global Services -->
+
+
+  </div>
+</div>
+<!-- COMPANY DETAILS PANEL -->
+
+<!-- NOTE PANEL -->
+<div id="note-details" class="tab-pane">
+  <div class="box span11">
+    <div class="box-header">
+      <h2>
+        <i class="icon-file"></i><span class="break"></span>
+        Note
+      </h2>
+    </div>
+    <div class="box-content">
+
+      
+      <div id="notes">
+          <%= render @company.notes %>        
+      </div>
+      
+
+      <%= simple_form_for [@company, Note.new], remote: true do |f| %>
+        <%= f.input :body, :as => :text %>
+        <%= f.button :submit, :class => 'btn-primary' %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+<!-- END NOTE PANEL -->
+
+
+</div>

@@ -1,0 +1,20 @@
+<%- model_class = Client -%>
+<div class="modal hide fade" id="modal-window">
+  <div class="modal-header">
+    <a href="#" class="close">×</a>
+    <h3>Loading...</h3>
+  </div>
+  <div class="modal-body center">
+        <dl class="dl-horizontal">
+		  <dt><strong>Nome:</strong></dt>
+		  <dd><%= @client.full_name %></dd>
+		  <dt><strong><%= model_class.human_attribute_name(:mobile) %>:</strong></dt>
+		  <dd><%= @client.mobile %></dd>
+		  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+		  <dd><%= @client.email %></dd>
+		  <dt><strong>Indirizzo:</strong></dt>
+		  <dd><%= @client.full_address if @client.address? %></dd>
+		</dl>
+  </div>
+  <div class="modal-footer">&nbsp;</div>
+</div>

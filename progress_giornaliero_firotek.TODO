@@ -1,0 +1,92 @@
+ Firotek: Progress
+
+16/11/2012:
+ ✔ Creazione nuova app con Mysql
+ ✔ Git init con aggiornamento di .gitignore
+ ✔ Installazione twitter-bootstrap-rail 
+ ✔ Aggiunti Messaggi "Flash Notice" in application.html.erp
+ ✔ Installazione Gem simple_form
+ 
+ 16/11/2012:
+ ✔ Disegnato il DB relazione many-to-many (:through) "Companies", "Clients", "Partnership" @done (12-11-17 16:57)
+
+ 17/11/2012:
+  ✔ Creazione Scaffold per Clients e Companies - NB: campi di prova @done (12-11-17 16:59)
+  ✔ Creazione Modello Partenership @done (12-11-17 16:59)
+  ✔ Creazione Scaffold Category per Companies @done (12-11-17 16:59)
+  ✔ Simple Form Applicato agli Scaffolds @done (12-11-17 16:58)
+  ✔ Inserite Associazioni ai modelli creati @done (12-11-17 17:00)
+  ✔ Accepts_nested_attributes ai modelli @done (12-11-17 17:01)
+  ✔ aggiunto lo sitle per i CRUD dei modelli (esempio preso da tema pefectum su www.wrapbootstrap.com) @done (12-11-17 
+  17:02)
+  ✔ Aggiunto nested_form con simple_form per associare piu compagnie ai clienti @done (12-11-17 17:25)
+  ✔ Aggiunto nested form per le associazioni di categoria alle compagnie, piu voce in tabella in index.html.erb @done (12-11-17 17:26)
+  ✔ Aggiunta lista di categorie associate al cliente con i button dropdown in tabella @done (12-11-17 17:46)
+
+22/11/2012:
+ ✔ Integrazione includes() per i controller di "clients" e "Companies" @done (12-11-22 17:41)
+ ✔ Aggiunto link alla Company nella lista dei clients "index.html.erb" @done (12-11-27 17:02)
+ ✔ Visualizzazione nome della categoria della Company in show.html.erb @done (12-11-22 17:42)
+ ✔ Correzione nome colonna attraverso migrazione FixClientsColumnName per il campo cognome + aggiornamento viste e modelli @done (12-11-22 17:54)
+ ✔ Creazione virtual attributes "full_name" nel modello Clients.rb per visualizzare il nome completo @done (12-11-22 17:55)
+ ✔ Integrare Select2 Jquery plugin Gem (http://rubydoc.info/gems/select2-rails/3.2.1/frames) @done (12-11-22 23:02)
+
+26/11/2012:
+ ✔ Integrazione DataTables Jquery Gem e creare stile TwitterBootstrap (http://datatables.net/forums/discussion/7637/twitter-bootstrap/p1) RailsCast.com #340 @done (12-11-27 00:06)
+ ✔ aggiunto campo email per il Clients model e aggiornato scaffolds @done (12-11-27 00:37)
+ ✔ Aggiornata la vista edit.html.erb con struttura a box di Client @done (12-11-27 00:53)
+ ✔ Aggiornata la vista edit.html.erb con struttura a box di Company @done (12-11-27 00:54)
+
+27/12/2012:
+ ✔ Aggiunto Indirizzo per Clientdalla migration  @done (12-11-27 14:11)
+ ✔ aggiunto status per Client dalla migration 20121127120800_add_status_to_client.rb @done (12-11-27 14:11)
+ ✔ Creazione della migration 20121127095613_add_address_and_cap_and_city_to_client.rb @done (12-11-27 16:19)
+ ✔ Creazione dell'helper in helpers/application_helper.rb per la visualizzazione dei campi solo se non sono vuoti @done (12-11-27 16:18)
+ ✔ integrazione dei campi nella vista show.html.erb di Companies dalla migrazione 20121127095613_add_address_and_cap_and_city_to_client.rb @done (12-11-27 16:19)
+ ✔ Creazione Helper "link_icon(icon)" in helpers/application_helper.rb per far visualizzare le icone di TwitterBottstrap dentro il link_to @done (12-11-27 16:32)
+ ✔ Aggiunto il campo boolean "is_global_service" migration: 20121127154332_add_isglobalservice_to_companies.rb @done (12-11-27 16:59)
+ ✔ Modifcato il label_method della collection Client nel _form di Company per visualizzare il nome completo del referente e non solo il nome @done (12-11-27 17:00)
+ ✔ Labellizati i campi in italiano per il _form di Company @done (12-11-27 17:01)
+ ✔ Aggiunto il campo "is_global_service" nel _form di Company @done (12-11-27 17:01)
+ ✔ Modificata la select del simple_form per le associazioni alle aziende nel _form di Client (riga 14) @done (12-11-27 17:17)
+ ✔ Validazione per Client model @done (12-11-27 18:29)
+ ✔ Validazione per Companies model @done (12-11-27 18:29)
+ ✔ Aggiunto campo email per Companies migration: 20121127170113_add_email_to_company.rb @done (12-11-27 18:30)
+ ✔ integrazione del campo email in vista show.html.erb per Companies @done (12-11-27 18:31)
+ ✔ Aggiunta icon flag verde nella index.html.erb per le global service @done (12-11-27 18:43)
+ ✔ Formattato stile _form per Companies @done (12-11-27 22:50)
+ ✔ Formattato stile _form per Clients @done (12-11-27 22:50)
+ ✔ Creare una self referencial in Companies per le associazioni alle global service (RailsCasts #163) @done (12-11-28 00:16)
+ ✔ Controllo Jquery  di visualizzazione aziende associate se il check su global service è attivo o meno (comanies.js.coffee) @done (12-11-28 01:27)
+ ✔ Aggiunto il box dell'elenco aziende Global service assocaite ad una company @done (12-11-28 01:34)
+
+28/11/2012:
+  Integrazione Mappa in company:
+  ✔ Creazione della migration 20121128161648_add_latitude_and_longitude_to_company.rb @done (12-11-28 17:21)
+  ✔ installazione e configurazione principale nel modello company d gemma gocoder https://github.com/alexreisner/geocoder @done (12-11-28 17:22)
+  ✔ installazione e configurazione principale nel modello company della gemma gmaps4rails per la visualizzazione della mappa https://github.com/apneadiving/Google-Maps-for-Rails/ @done (12-11-28 22:51)
+  ✔ Hack per css di bootstrap per la gmaps4rails @done (12-11-28 22:52)
+  ✔ Integrata la mappa in company show.html.erb @done (12-11-28 22:53)
+ ✔ Aggiornato il file locales/it.yml @done (12-11-28 22:54)
+ ✔ Aggiornata la vista show di Client (non definitiva solo struttura) @done (12-11-28 23:24)
+
+29/11/2012:
+ ✔ Creato modello e Tabella DB note con relazione a Companies @done (12-11-29 14:46)
+ ✔ installazione gemma "coccon" (https://github.com/nathanvda/cocoon) @done (12-11-29 14:53)
+4/12/2012:
+ ✔ Aggiunto supporto ajax per la creazione delle note di una company @done (12-12-04 18:10)
+ ✔ creato template con le tab @done (12-12-04 18:10)
+ ✔ grafica e visualizzazione nota @done (12-12-04 18:10)
+ ✔ internazionalizzazione della data e creazione di un helper in application_helper.rb "date_format_and_ago" con supporto del tooltip @done (12-12-04 18:10)
+
+5/12/2012:
+ ✔ Installazione gem Devise per autenticazione utenti @done (12-12-05 17:08)
+ ✔ aggiunto in menu dropdown utente con link e controlli da stilizzare @done (12-12-05 17:08)
+
+
+
+  
+  ToDo:
+
+  
+

@@ -1,0 +1,64 @@
+<%- model_class = Company -%>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_company_path,
+            :class => 'btn btn-primary' %>
+
+
+
+<div class="box">
+<div class="box-header">
+  <h2>
+      <i class="icon-group"></i>
+      <span class="break"></span>
+
+    <%=t '.title', :default => model_class.model_name.human.pluralize %>
+  </h2>
+</div>
+<div class="box-content">
+  <table class="table table-striped table-bordered datatable">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th>Indirizzo</th>
+      <th><%= model_class.human_attribute_name(:category_id) %></th>
+      <th>Regione</th>
+      <th>Appaltatrice</th>
+
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+
+        <td><%= link_to company.name.titleize, company_path(company) %></td>
+        <td><%= company.full_address %></td>
+        <td  <%= "class=red" if company.is_global_service  %>><%=t company.category.name %></td>
+        <td><%= company.region %></td>
+
+        <td><% company.associated_company.each do |company_global_service| %>
+          
+           <%= link_to company_global_service.name, company_path(company_global_service) %> 
+         
+        <% end %></td>
+  
+        <td>
+          <% if can? :update, @company %>
+                <%= link_to t('.edit', :default => link_icon("edit")),
+                      edit_company_path(company), :class => 'btn btn-mini' %>
+          <% end %>
+<% if can? :destroy, @company %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      company_path(company),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+                      <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</div>

@@ -1,0 +1,19 @@
+    <%= simple_form_for @company, :html => { :class => 'form-horizontal'} do |company| %>
+      <%= company.simple_fields_for :notes do |note| %>
+        <%= render :partial => 'note_fields', :company => note %>
+      <% end %>
+      
+    <%= link_to_add_association 'Aggiungi Nota', company, :notes %>
+
+
+    <!-- or -->
+
+        <%= simple_form_for @company, :html => { :class => 'form-horizontal'} do |company| %>
+          <%= company.simple_fields_for :notes do |note| %>
+        <%= note.input :body, :as => :text%>
+      <% end %>
+    
+
+<%= company.button :submit %>
+
+    <% end %>

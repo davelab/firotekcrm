@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirotekCRM</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+
+
+
+	<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">FirotekCRM</a>
+        <div class="nav-collapse header-nav">
+          <ul class="nav">
+            <li><%= link_to link_icon("user") + "Clients", clients_path %></li>
+            <li><%= link_to link_icon("group") + "Companies", companies_path %></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li class="dropdown">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="icon-key"></i> 
+                <%= raw "Loggato come <strong>#{current_user.email}</strong>" if user_signed_in? %>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <% if user_signed_in? %>
+  
+                <li><%= link_to 'Modifica profile', edit_user_registration_path %></li> 
+                <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+              <% else %>
+                <li><%= link_to "Registra user", new_user_registration_path %></li> 
+                <li><%= link_to "Login", new_user_session_path %></li>
+              <% end %>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container">
+		<% flash.each do |name, msg| %>
+			<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+			    <a class="close" data-dismiss="alert">×</a>
+			    <%= msg %>
+			</div>
+	<%	end %>
+	<%= yield %>	
+  <div class="modal-container"></div>
+</div>
+<%= yield :scripts %> 
+</body>
+</html>

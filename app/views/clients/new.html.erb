@@ -1,0 +1,16 @@
+<%- model_class = Client -%>
+<div class="box">
+<div class="box-header">
+
+  <h2>
+	<i class="icon-user"></i>
+    <span class="break"></span>
+  	<%=t '.title', :default => t('helpers.titles.new', :model => model_class.model_name.human,
+                                 :default => "New #{model_class.model_name.human}") %>
+  </h2>
+</div>
+<div class="box-content">
+<%= render :partial => 'form' %>
+</div>
+</div>
+

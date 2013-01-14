@@ -1,0 +1,5 @@
+<% if @note.new_record? %>
+   $("textarea#note_body").effect("highlight", {color: "#f3bfbf"});
+<% else %>
+    $("div#notes").append("<%= escape_javascript(render @note) %>");
+<% end %>

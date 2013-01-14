@@ -1,0 +1,381 @@
+@import "twitter/bootstrap/bootstrap";
+
+@sorting_bg: #e4f0f2;
+@ok_green : #51f33c;
+@main-color: #EC3838;
+
+a{ outline: none;}
+a:hover{text-decoration:none;}
+/*
+ * TableTools styles
+ */
+.table tbody tr.active td,
+.table tbody tr.active th {
+	background-color: #08C;
+	color: white;
+}
+
+.table tbody tr.active:hover td,
+.table tbody tr.active:hover th {
+	background-color: #0075b0 !important;
+}
+
+.table-striped tbody tr.active:nth-child(odd) td,
+.table-striped tbody tr.active:nth-child(odd) th {
+	background-color: #017ebc;
+}
+
+table.DTTT_selectable tbody tr {
+	cursor: pointer;
+	*cursor: hand;
+}
+
+div.DTTT .btn {
+	color: #333 !important;
+	font-size: 12px;
+}
+
+div.DTTT .btn:hover {
+	text-decoration: none !important;
+}
+
+
+ul.DTTT_dropdown.dropdown-menu a {
+	color: #333 !important; /* needed only when demo_page.css is included */
+}
+
+ul.DTTT_dropdown.dropdown-menu li:hover a {
+	background-color: #0088cc;
+	color: white !important;
+}
+
+/* TableTools information display */
+div.DTTT_print_info.modal {
+	height: 150px;
+	margin-top: -75px;
+	text-align: center;
+}
+
+div.DTTT_print_info h6 {
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 28px;
+	margin: 1em;
+}
+
+div.DTTT_print_info p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+body {padding-top:60px; background:image-url("bg.jpg") repeat;}
+
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #E0DFDF;
+	border-bottom: 1px solid #FEFEFE;
+}
+
+
+
+.light{font-weight:200; }
+.red {color:@main-color}
+.green{color: @ok_green}
+.center {text-align:center;}
+small {font-size:10px; color:#ccc}
+.box {
+	margin: 10px 0px;
+}
+
+textarea{ width: 95%; height: 100px;}
+
+.vertical-row-r { border-right: 1px solid #E0DFDF !important; }
+.vertical-row-l { border-left: 1px solid #E0DFDF !important; }
+
+
+a [class^="icon-"], a [class*="icon-"] { text-decoration: none; }
+
+
+.header-nav .btn {
+  	display: inline-block;
+  	padding: 11px 20px;
+	margin-top: 0px;
+  	margin-left: 0px;
+  	font-size: 14px;
+  	line-height: 20px;
+  	text-align: center;
+  	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  	vertical-align: middle;
+  	cursor: pointer;
+  	background: transparent;
+  	border-left: 1px solid #007fb7;
+	border-right: 1px solid #007fb7;
+	border-top: 0px solid #bbbbbb;
+	border-bottom: 0px solid #bbbbbb;
+  	-webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+          	border-radius: 0px;
+  	-webkit-box-shadow: none;
+       -moz-box-shadow: none;
+          	box-shadow: none;
+}
+
+.header-nav .btn i {
+	text-shadow: 0px 1px 1px #0a0c0e !important;
+}
+
+.header-nav .btn .caret {
+	border-top-color: #ddd !important;
+	border-bottom-color: #ddd !important;
+}
+
+.header-nav .btn:hover .caret {
+	border-top-color: #fff !important;
+	border-bottom-color: #fff !important;
+}
+
+
+.box-header {
+	height: 20px;
+  	border: 1px solid #ddd;
+	margin-bottom: -1px;
+  	padding: 10px;
+  	background-color: #fafafa;
+  	background-image: -moz-linear-gradient(top, #fafafa, #efefef);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#efefef));
+  	background-image: -webkit-linear-gradient(top, #fafafa, #efefef);
+  	background-image: -o-linear-gradient(top, #fafafa, #efefef);
+  	background-image: linear-gradient(to bottom, #fafafa, #efefef);
+  	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#efefef', GradientType=0);
+  	-webkit-box-shadow: none;
+     	-moz-box-shadow: none;
+          box-shadow: none;
+  	-webkit-border-radius: 2px 2px 0px 0px;
+       -moz-border-radius: 2px 2px 0px 0px;
+          	border-radius: 2px 2px 0px 0px;
+	overflow: hidden;
+}
+
+.box-header .box-icon {
+float: right;
+margin-top: 1px;
+}
+
+.box-header h2{
+	font-size: 16px;
+	line-height: 16px;
+	float:left;
+	margin-top: 2px;
+	color: #646464;
+	font-weight: normal;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+.box-header h2 i{
+	margin: 1px 3px 0px 5px;
+	opacity: .4;
+}
+
+.box-header .break{
+	border-left: 1px solid #fcfcfc;
+	border-right: 1px solid #ddd;
+	margin: -12px 10px -10px 10px;
+	padding: 12px 0px 10px 0px;
+	
+}
+
+.box-header .box-icon {
+	float:right;
+	margin-top: 1px;
+}
+
+.box-header .box-icon i {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	opacity: .4;
+}
+
+.box-header .box-icon i:hover {
+	opacity: .8;
+}
+
+.box-header .box-icon a {
+	margin: 0px 5px;
+}
+
+.box-content {
+  	margin-top: -1px;
+	padding: 10px;
+  	border: 1px solid #ddd;
+  	background: #fcfcfc;
+  	-webkit-border-radius: 0px 0px 2px 2px;
+	   -moz-border-radius: 0px 0px 2px 2px;
+          	border-radius: 0px 0px 2px 2px;
+	-webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+	   -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+			box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+}
+
+.form-actions {
+  	padding: 19px 20px 20px;
+  	margin: 20px -10px -30px -10px;
+  	background-color: #f5f5f5;
+  	border-top: 1px solid #e5e5e5;
+  	*zoom: 1;
+}
+
+.table tr:first-child { border-top: none;}
+
+//labels
+
+//Status Clients:
+.label-warm {background-color: #f3942e;}
+.label-cold {background-color:#56b5ff}
+
+
+//DataTable Plugin overwriting style
+
+
+table.dataTable thead th {border-bottom: none;}
+
+table.dataTable{margin: 25px 0 !important;}
+
+table.dataTable tr.odd td.sorting_1 {
+background-color: @sorting_bg;
+}
+table.dataTable tr.even td.sorting_1 {
+background-color: lighten(@sorting_bg, 5%);
+}
+table.dataTable thead .sorting_asc {
+background: image-url("sort_asc.png") no-repeat center right;
+}
+table.dataTable thead .sorting_desc {
+background: image-url("sort_desc.png") no-repeat center right;
+}
+table.dataTable thead .sorting{
+background: image-url("sort_both.png") no-repeat center right;
+}
+
+//======
+
+
+ul.record-list li{
+	padding: 5px 0;
+	list-style:none;
+  	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ebebeb;
+}
+
+ul.record-list li i{
+	opacity: .7;
+}
+
+ul.record-list li:first-child {
+	border-top: none;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+ul.record-list li:last-child {
+	border-bottom: none;
+}
+
+ul.record-list a:hover{
+	text-decoration:none;
+}
+
+ul.record-list{
+	margin:0;
+}
+
+ul.record-list li a span {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: right;
+	width: 50px;
+	zoom: 1;
+}
+
+//COMPANIES STYLE
+//note:
+div.single-note { 
+#gradient > .vertical( #ffffff, #fafafa);
+.border-radius(3px);
+.drop-shadow();	
+border:1px solid #ddd;
+padding:10px;
+margin-bottom:10px;
+
+}
+ 
+// map stile: 
+#map img { 
+  max-width: none;
+}
+#map label { 
+  width: auto; display:inline; 
+} 
+
+.map_container {width: 95%}
+.gmaps4rails_map{width:100%}
+
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
+@iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+// Note: If you use asset_path() here, your compiled boostrap_and_overrides.css will not
+//       have the proper paths. So for now we use the absolute path.
+@fontAwesomeEotPath: asset-path("fontawesome-webfont.eot");
+@fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-path("fontawesome-webfont.svg");
+
+// Font Awesome
+@import "fontawesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+@navbarBackground : #00537c;
+@navbarBackgroundHighlight: #0071a3;
+@navbarText: #fff;
+@navbarBrandColor: #fff;
+@navbarLinkColor: #f2f2f2;
+@navbarLinkColorHover: #fff;
+@navbarLinkColorActive: #fff;
+@navbarLinkBackgroundHover: transparent;
