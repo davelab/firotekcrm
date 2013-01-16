@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 
   has_many :assignments
   has_many :roles, :through => :assignments
-  belongs_to :client
+  
 
   validates :username,  presence: {message: "campo obbligatorio"}
 
