@@ -8,8 +8,8 @@ class Client < ActiveRecord::Base
   					:city, 
             :region,
   					:status,
-            :user_id,
-  					:company_ids
+  					:company_ids,
+            :user_id
 
   has_many :partenership
   has_many :companies, :through => :partenership

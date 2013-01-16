@@ -19,18 +19,13 @@
   </div>
 
     <%= f.input :status , :collection => ["WARM", "COLD"], as: :select %>
+
 	<%= 
 		f.association :companies, 
 		:collection => Company.all(:order => 'name'),
     :input_html => { :multiple => false },
     label: "Azienda"
 	%>
-
-    <%= 
-    f.input :user, :as => :select,
-    :collection => User.all(:order => 'username'),
-    label: "Venditore Associato"
-  %>
 
 
 
