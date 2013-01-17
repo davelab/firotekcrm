@@ -49,13 +49,13 @@
         <dd><%=t @company.category.name %></dd>    
         <dt><strong>Indirizzo:</strong></dt>
         <dd><%= @company.full_address %></dd>
-        <%= show_non_blank_field('Regione', @company.region) %>
+        <%= show_not_blank_field('Regione', @company.region) %>
         <dt><strong>email:</strong></dt>
         <dd><%= mail_to @company.email %></dd>
 
-        <%= show_non_blank_field('Telefono', number_to_phone(@company.phone)) %>
-        <%= show_non_blank_field('Mobile', number_to_phone(@company.mobile)) %>
-        <%= show_non_blank_field('Fax', number_to_phone(@company.fax)) %>
+        <%= show_not_blank_field('Telefono', number_to_phone(@company.phone)) %>
+        <%= show_not_blank_field('Mobile', number_to_phone(@company.mobile)) %>
+        <%= show_not_blank_field('Fax', number_to_phone(@company.fax)) %>
       </dl> 
     <!-- Visualizza la mappa solo se è presente l'indirizzo -->
     <%= gmaps({ "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 }, "markers"  => {"data" => @mapCompany } }) if @company.address? %>

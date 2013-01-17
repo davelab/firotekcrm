@@ -1,11 +1,18 @@
+
+
 @import "twitter/bootstrap/bootstrap";
 
 @sorting_bg: #e4f0f2;
 @ok_green : #51f33c;
 @main-color: #EC3838;
 
+@blu: #0071A3;
+
 a{ outline: none;}
 a:hover{text-decoration:none;}
+
+.colored{color: @blu}
+
 /*
  * TableTools styles
  */
@@ -319,7 +326,7 @@ ul.record-list li a span {
 //COMPANIES STYLE
 //note:
 div.single-note { 
-#gradient > .vertical( #ffffff, #fafafa);
+
 .border-radius(3px);
 .drop-shadow();	
 border:1px solid #ddd;
@@ -339,16 +346,21 @@ margin-bottom:10px;
 .map_container {width: 95%}
 .gmaps4rails_map{width:100%}
 
+
+
 @import "twitter/bootstrap/responsive";
+
+
 
 // Set the correct sprite paths
 @iconSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings");
 @iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
 
 // Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
-// Note: If you use asset_path() here, your compiled boostrap_and_overrides.css will not
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
 //       have the proper paths. So for now we use the absolute path.
 @fontAwesomeEotPath: asset-path("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot#iefix");
 @fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff");
 @fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf");
 @fontAwesomeSvgPath: asset-path("fontawesome-webfont.svg");
@@ -369,7 +381,6 @@ margin-bottom:10px;
 //
 // Example:
 // @linkColor: #ff0000;
-
 
 @navbarBackground : #00537c;
 @navbarBackgroundHighlight: #0071a3;

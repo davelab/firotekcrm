@@ -8,6 +8,11 @@ class Client < ActiveRecord::Base
   					:city, 
             :region,
   					:status,
+            :office, 
+            :secondary_mobile, 
+            :province, 
+            :position, 
+            :description, 
   					:company_ids
           
 
@@ -24,7 +29,8 @@ class Client < ActiveRecord::Base
 	end
 
   	def full_address
-		"#{address}, #{cap}, #{city}".titleize
+      
+		"#{address}, #{cap}, #{city}, #{province}" if address
 		
 	end
   

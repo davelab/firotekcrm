@@ -84,9 +84,31 @@
  ✔ aggiunto in menu dropdown utente con link e controlli da stilizzare @done (12-12-05 17:08)
 
 
+17/01/2013:
+ ✔ aggiunti ruoli di base con cancan gem @done (13-01-17 12:16)
+ ✔ Aggiunta autenticazione all'applicazione in ingresso @done (13-01-17 12:18)
+ ✔ aggiunto repository su github e configurato macchina locale e server remoto @done (13-01-17 12:22)
+ ✔ messa online del CRM su office.firotek.it @done (13-01-17 12:15)
+ ✔ creazione campi addizionali per clients da email matteo fiocco (migration) @done (13-01-17 12:17)
+      office, :string
+      secondary_mobile, :string
+      province, :string
+      position, :string
+      description, :text
+ ✔ aggiunte fixtures categories.yml con categorie indicate da matteo fiocco in email @done (13-01-17 12:23)
+ ✔ rivisitazione tabella client#index meno campi piu split nome cognome @done (13-01-17 17:03)
+ ✔ rifattorizzazione dei partial per client#show da click sul cognome @done (13-01-17 17:03)
+ ✔ update dei bundle @done (13-01-17 17:03)
+ ✔ stilizzazione dei modal box per la scheda cliente client#show @done (13-01-17 17:04)
 
-  
+
   ToDo:
 
+Dal Prossimo Commit dal l'ultimo update del 17/01:
+ ☐ bundle update
+ ☐ rails g bootstrap:install -f
+ ☐ git pull origin master
+ ☐ rake db:migrate
+ ☐ rake db:fixtures:load FIXTURES=categories
   
 

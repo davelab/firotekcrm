@@ -58,7 +58,19 @@
 			</div>
 	<%	end %>
 	<%= yield %>	
-  <div class="modal-container"></div>
+
+<div class="modal-container">
+    <div class="modal hide fade" id="modal-window">
+  <div class="modal-header">
+    <a href="#" class="close">×</a>
+    <h3>Loading...</h3>
+  </div>
+  <div class="modal-body">
+    
+  </div>
+  <div class="modal-footer">&nbsp;</div>
+</div>
+</div>
 </div>
 <%= yield :scripts %> 
 </body>

@@ -1,7 +1,53 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
-
-two:
-  name: MyString
+Sanità:
+  id: 1
+  name: Sanità
+Industria Alimentare:
+  id: 2
+  name: Industria Alimentare
+Industria Farmaceutica:
+  id: 3
+  name: Industria Farmaceutica
+Industria:
+  id: 4
+  name: Industria
+Global Service:
+  id: 5
+  name: Global Service
+Servizi:
+  id: 6
+  name: Servizi
+Banche e Assicurazioni:
+  id: 7
+  name: Banche e Assicurazioni
+Ente pubblico:
+  id: 8
+  name: Ente pubblico
+Comunicazioni:
+  id: 9
+  name: Comunicazioni
+Trasporti:
+  id: 10
+  name: Trasporti
+Consulenza sicurezza:
+  id: 11
+  name: Consulenza sicurezza
+Libero professionista:
+  id: 12
+  name: Libero professionista
+Settore alberghiero:
+  id: 13
+  name: Settore alberghiero
+Azienda privata:
+  id: 14
+  name: Azienda privata
+Impiantistica:
+  id: 15
+  name: Impiantistica
+Azienda pubblica:
+  id: 16
+  name: Azienda pubblica
+Centro commerciale:
+  id: 17
+  name: Centro commerciale

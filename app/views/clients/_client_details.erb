@@ -1,0 +1,33 @@
+       <%- model_class = Client -%>
+
+
+		<h3><%= @client.full_name %></h3>
+
+		   <i class="icon-suitcase"></i><% @client.companies.each do |company| %>
+             <%= link_to company.name, company_path(company) %> <%= "| #{@client.position}"   if @client.position %>
+          <% end %>
+
+        <dl class="dl-horizontal">
+
+
+	
+
+		  <%= show_not_blank_field('Tel. Ufficio', number_to_phone(@client.office)) %>
+
+		  <dt><strong><%= model_class.human_attribute_name(:mobile) %>:</strong></dt>
+		  <dd><%= number_to_phone(@client.mobile) %></dd>
+
+		  <%= show_not_blank_field('Mobile 2', @client.secondary_mobile) %>
+		  
+
+
+		  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+		  <dd><%= mail_to @client.email %></dd>
+		 
+		  <%= show_not_blank_field('Indirizzo', @client.full_address) %>
+
+		  
+
+		</dl>
+
+		<i><%= @client.description  %></i> 

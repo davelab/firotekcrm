@@ -1,7 +1,7 @@
 module ApplicationHelper
 
 
-	def show_non_blank_field(label, value)
+	def show_not_blank_field(label, value)
 		  @content = content_tag(:dt, content_tag(:strong, "#{label}:")) 
 		  @content << content_tag(:dd, "#{h value}")
 		  @content unless value.blank?
