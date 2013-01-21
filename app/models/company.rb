@@ -19,7 +19,9 @@ class Company < ActiveRecord::Base
 						:associated_company_ids,
 						:latitude,
 						:longitude,
-						:note_ids
+						:note_ids,
+						:acquisition,
+						:province
 	#END Attributes Properties
 
 	#Relations
@@ -66,6 +68,8 @@ class Company < ActiveRecord::Base
 		def gmaps4rails_address
 		  "#{address}, #{cap}, #{city}".titleize
 		end
+
+	
 	#END Custom Methods
 
 	#Scopes
@@ -80,5 +84,13 @@ class Company < ActiveRecord::Base
 		    end
 		  end
 		end
+
+ 		
+ 	ACQUISITIONS = { "Leads" => 1 , "Potenziale" => 2 , "Acquisito" => 3 }
+
+	def self.getAcquisition(value)
+		 ACQUISITIONS.index(value)
+	end
+
 
 end
