@@ -53,7 +53,7 @@ class Company < ActiveRecord::Base
 	#end Geocoder
 
   	#Validation
-		validates :name, :address, :cap, :email, :address, :city,  presence: {message: "campo obbligatorio"}
+		validates :name, :address, :cap, :email, :address, :city, :category_id,  presence: {message: "campo obbligatorio"}
 		validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
 		validates :cap, numericality: {only_integer: true, message: "formato non corretto"}
 	#END Validation
@@ -89,7 +89,7 @@ class Company < ActiveRecord::Base
  	ACQUISITIONS = { "Leads" => 1 , "Potenziale" => 2 , "Acquisito" => 3 }
 
 	def self.getAcquisition(value)
-		 ACQUISITIONS.index(value)
+		 ACQUISITIONS.index(value) 
 	end
 
 
