@@ -10,13 +10,14 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   adapter: mysql2
+  host: 192.168.0.232
   encoding: utf8
   reconnect: false
-  database: FirotekCRM_development
+  database: firotek_crm_db
   pool: 5
-  username: root
-  password: 
-  socket: /tmp/mysql.sock
+  username: firo_db_usr13
+  password: frtk_crm@office.2013
+  port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
