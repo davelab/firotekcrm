@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130117103520) do
+ActiveRecord::Schema.define(:version => 20130118152300) do
 
   create_table "Roles", :force => true do |t|
     t.string   "name"
@@ -70,6 +70,8 @@ ActiveRecord::Schema.define(:version => 20130117103520) do
     t.float    "longitude"
     t.boolean  "gmaps"
     t.string   "region"
+    t.string   "province"
+    t.integer  "acquisition"
   end
 
   create_table "companies_relationships", :force => true do |t|

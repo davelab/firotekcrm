@@ -22,6 +22,25 @@ doc/
 .DS_Store
 .idea
 
-config/database.yml
+config/*.yml
 firoteckCRM.sublime-workspace
 firoteckCRM.sublime-project
+
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+.rvmrc
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project

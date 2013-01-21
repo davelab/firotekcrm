@@ -21,6 +21,7 @@
     <tr>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th>Indirizzo</th>
+      <th>Acquisizione</th>
       <th><%= model_class.human_attribute_name(:category_id) %></th>
       <th>Regione</th>
       <th>Appaltatrice</th>
@@ -34,6 +35,7 @@
 
         <td><%= link_to company.name.titleize, company_path(company) %></td>
         <td><%= company.full_address %></td>
+        <td><%= Company.getAcquisition(company.acquisition) %></td>
         <td  <%= "class=red" if company.is_global_service  %>><%=t company.category.name %></td>
         <td><%= company.region %></td>
 

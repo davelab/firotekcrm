@@ -11,7 +11,8 @@
     <div class="span3"><%= f.input :city, label: "Città"%></div>
 </div>
 <div class="row">
-  <div class="span5"><%= f.input :region, :collection => regions, label: "Regione"%></div>
+  <div class="span4"><%= f.input :region, :collection => regions, label: "Regione"%></div>
+  <div class="span5"><%= f.input :province, label: "Provincia", input_html: {:class => "span1"} %></div>
 </div>
 
 <hr>
@@ -39,6 +40,10 @@
       :collection => Company.global_services(order: :name),
       label: "Aziende Associate"
     %>
+
+
+    <%= f.input :acquisition, as: :select, collection: Company::ACQUISITIONS, label: "Stato Acquisizione" %>
+
   </div>
 </div>
 

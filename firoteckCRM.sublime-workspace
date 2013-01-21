@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"acq",
+				"acquisition"
+			],
+			[
+				"client",
+				"client"
+			],
+			[
+				"compa",
+				"company"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"clie",
+				"client"
+			],
+			[
+				"sho",
+				"show_not_blank_field"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
 				"curre",
 				"current_user"
 			],
@@ -28,16 +60,8 @@
 				"associated_company_id"
 			],
 			[
-				"client",
-				"client_path"
-			],
-			[
 				"bac",
 				"background"
-			],
-			[
-				"compa",
-				"companies"
 			],
 			[
 				"create",
@@ -339,6 +363,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/helpers/companies_helper.rb",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/companies/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1871,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/company.rb",
+			"settings":
+			{
+				"buffer_size": 2299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/companies/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/companies/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 4924,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -640,17 +704,39 @@
 	},
 	"file_history":
 	[
-		"/Users/dave/Sites/RoR/FirotekCRM/app/models/user.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/models/client.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/bootstrap_and_overrides.css.less",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/categories/show.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.js.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/bootstrap_and_overrides.css.less",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/models/client.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_client_details.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_form.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114085658_remove_user_id_from_clients.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO",
+		"/Users/dave/Library/Caches/Cleanup At Startup/Transmit/EC07E285-7A80-4C4E-A6B5-31BCF9F24E84/attiva_pec.php",
+		"/Users/dave/Sites/RoR/FirotekCRM/.gitignore",
+		"/Users/dave/Desktop/database_online_firotek.yml",
+		"/Users/dave/Sites/RoR/FirotekCRM/Gemfile",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/custom.css.less",
+		"/Users/dave/Desktop/old_bootstrap_and_overrides.css.less",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/custom.less",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_modalclientdetails.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/_client_details.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130117103520_add_additional_fields_to_clients.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/assignments.yml",
+		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/categories.yml",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/models/user.rb",
+		"/Users/dave/Desktop/categories.yml",
+		"/Users/dave/Sites/RoR/FirotekCRM/db/seeds.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121122164740_fix_clients_coloumn_name.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130110210111_fix_role_coloumn_name.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130111160309_add_user_id_to_clients.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/Gemfile.lock",
+		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114085658_remove_user_id_from_clients.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/companies_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/company.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
@@ -662,20 +748,15 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/assignment.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/role.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_form.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121122164740_fix_clients_coloumn_name.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121123150205_change_cap_field_in_companies.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/clients.js.coffee",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/sessions/new.html.erb",
 		"/Users/dave/Desktop/phpinfo.php",
-		"/Users/dave/Sites/RoR/FirotekCRM/Gemfile",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/application.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/categories.js.coffee",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_modal_client_details.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/companies_relationship.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
 		"/Users/dave/Sites/Panadvertising/redirect_301/.htaccess",
 		"/Users/dave/Sites/RoR/FirotekCRM/doc/README_FOR_APP",
 		"/Users/dave/Sites/RoR/FirotekCRM/test/functional/companies_controller_test.rb",
@@ -687,7 +768,6 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/index.xls.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/mime_types.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/environments/development.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121205154944_devise_create_users.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/notes/create.js.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/notes_controller.rb",
@@ -741,7 +821,6 @@
 		"/Users/dave/Dropbox/Sublime/Packages/User/snippets/RubyOnRails/flasheach.sublime-snippet",
 		"/Users/dave/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/dave/Dropbox/Sublime/Packages/ERB Insert and Toggle Commands/erb_block.py",
-		"/Users/dave/Sites/RoR/FirotekCRM/.gitignore",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/database.yml",
 		"/Users/dave/Dropbox/Sublime/Packages/HTML/HTML.sublime-completions",
 		"/Users/dave/Dropbox/Sublime/Packages/HTML/HTML.tmLanguage",
@@ -752,22 +831,7 @@
 		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/archive.php",
 		"/Users/dave/Sites/Panadvertising/temiromana.it/application/bootstrap.php",
 		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/css/layout.css",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/headings.php",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/news.php",
-		"/etc/hosts",
-		"/private/etc/hosts",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/js/temi.js",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/magazine.php",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/index.php",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/master.php",
-		"/Users/dave/Google Drive/Testi e info Locandina Marcio Baia - Gela.txt",
-		"/Users/dave/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/css/atooltip.css",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/css/skins/tango/skin.css",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/js/jquery.ui.rcarousel.js",
-		"/Users/dave/Library/Application Support/Sublime Text 2/Packages/Prefixr/Default (OSX).sublime-keymap",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/assets/css/text.css",
-		"/Users/dave/Sites/Panadvertising/temiromana.it/sftp-config.json"
+		"/Users/dave/Sites/Panadvertising/temiromana.it/application/views/main/headings.php"
 	],
 	"find":
 	{
@@ -786,6 +850,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vertical",
+			"center",
+			"show_non_blank_field",
+			"Assicurazioni",
+			"    - ",
 			"1px solid #D72222",
 			"company_global_service",
 			"box",
@@ -908,12 +977,7 @@
 			"submit",
 			"success",
 			"form_prenotazione",
-			"INPUT",
-			"select",
-			"left",
-			"indi",
-			"indirizzo_arrivo",
-			"2"
+			"INPUT"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -921,6 +985,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"show_not_blank_field",
 			"note",
 			"notes",
 			"\""
@@ -934,8 +999,601 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/helpers/companies_helper.rb",
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/companies/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 1871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1236,
+								1236
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 513.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/company.rb",
+					"settings":
+					{
+						"buffer_size": 2299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2287,
+								2287
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 587.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/companies/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1055,
+								1055
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/companies/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 4924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2001,
+								2001
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 665.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -985,6 +1643,74 @@
 		"selected_items":
 		[
 			[
+				"sho",
+				"app/views/companies/show.html.erb"
+			],
+			[
+				"inde",
+				"app/views/companies/index.html.erb"
+			],
+			[
+				"tod",
+				"progress_giornaliero_firotek.TODO"
+			],
+			[
+				"to",
+				"progress_giornaliero_firotek.TODO"
+			],
+			[
+				"todo",
+				"progress_giornaliero_firotek.TODO"
+			],
+			[
+				"over",
+				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"ind",
+				"app/views/clients/index.html.erb"
+			],
+			[
+				"client",
+				"app/models/client.rb"
+			],
+			[
+				"help",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"appli",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"view",
+				"app/views/clients/_form.html.erb"
+			],
+			[
+				"additio",
+				"db/migrate/20130117103520_add_additional_fields_to_clients.rb"
+			],
+			[
+				"_form",
+				"app/views/clients/_form.html.erb"
+			],
+			[
+				"addition",
+				"db/migrate/20130117103520_add_additional_fields_to_clients.rb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"gitigno",
+				".gitignore"
+			],
+			[
 				"remove",
 				"db/migrate/20130114085658_remove_user_id_from_clients.rb"
 			],
@@ -993,16 +1719,8 @@
 				"app/models/user.rb"
 			],
 			[
-				"client",
-				"app/models/client.rb"
-			],
-			[
 				"adduser",
 				"db/migrate/20130111160309_add_user_id_to_clients.rb"
-			],
-			[
-				"over",
-				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
 			],
 			[
 				"cl",
@@ -1041,10 +1759,6 @@
 				"Gemfile"
 			],
 			[
-				"help",
-				"app/helpers/application_helper.rb"
-			],
-			[
 				"ov",
 				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
 			],
@@ -1073,14 +1787,6 @@
 				"app/views/companies/_form.html.erb"
 			],
 			[
-				"inde",
-				"app/views/companies/index.html.erb"
-			],
-			[
-				"_form",
-				"app/views/clients/_form.html.erb"
-			],
-			[
 				"shoe",
 				"app/views/clients/show.html.erb"
 			],
@@ -1095,14 +1801,6 @@
 			[
 				"apphel",
 				"app/helpers/application_helper.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				"appli",
-				"app/assets/javascripts/application.js"
 			],
 			[
 				"appjs",
@@ -1193,20 +1891,8 @@
 				"app/assets/javascripts/application.js"
 			],
 			[
-				"to",
-				"progress_giornaliero_firotek.TODO"
-			],
-			[
-				"tod",
-				"progress_giornaliero_firotek.TODO"
-			],
-			[
 				"box",
 				"app/views/struttura-box.html"
-			],
-			[
-				"sho",
-				"app/views/companies/show.html.erb"
 			],
 			[
 				"com",
@@ -1283,10 +1969,6 @@
 			[
 				"m",
 				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
-			],
-			[
-				"todo",
-				"progress_giornaliero_firotek.TODO"
 			],
 			[
 				"clien",
@@ -1427,6 +2109,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 275.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true
 }

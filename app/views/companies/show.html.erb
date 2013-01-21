@@ -50,6 +50,7 @@
         <dt><strong>Indirizzo:</strong></dt>
         <dd><%= @company.full_address %></dd>
         <%= show_not_blank_field('Regione', @company.region) %>
+        <%= show_not_blank_field('Provincia', @company.province) %>
         <dt><strong>email:</strong></dt>
         <dd><%= mail_to @company.email %></dd>
 
