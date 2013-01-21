@@ -13,13 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130117103520) do
 
-  create_table "Roles", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string   "slug"
-  end
-
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
     t.integer  "role_id"
@@ -91,6 +84,13 @@ ActiveRecord::Schema.define(:version => 20130117103520) do
     t.integer  "company_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "slug"
   end
 
   create_table "users", :force => true do |t|
