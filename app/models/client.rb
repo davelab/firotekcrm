@@ -13,11 +13,14 @@ class Client < ActiveRecord::Base
             :province, 
             :position, 
             :description, 
-  					:company_ids
+  					:company_ids,
+            :user_id
           
 
   has_many :partenership
   has_many :companies, :through => :partenership
+  has_many :reports
+  belongs_to :user
   
   accepts_nested_attributes_for :companies
 
@@ -28,11 +31,11 @@ class Client < ActiveRecord::Base
 	    [name, surname].join(' ')
 	end
 
-  	def full_address
-      
+  def full_address    
 		"#{address}, #{cap}, #{city}, #{province}" if address
-		
 	end
+
+
   
 
 

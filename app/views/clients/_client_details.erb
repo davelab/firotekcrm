@@ -5,12 +5,13 @@
 
 		   <i class="icon-suitcase"></i><% @client.companies.each do |company| %>
              <%= link_to company.name, company_path(company) %> <%= "| #{@client.position}"   if @client.position %>
-          <% end %>
+          <% end %> 
+          <br>
+          Assegnato a: <b><%= @client.user_id ? @client.user.username : "Non assegnato" %></b>
+
+
 
         <dl class="dl-horizontal">
-
-
-	
 
 		  <%= show_not_blank_field('Tel. Ufficio', number_to_phone(@client.office)) %>
 

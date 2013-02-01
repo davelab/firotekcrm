@@ -19,17 +19,49 @@
 //= require dataTables/extras/TableTools
 //= require dataTables/extras/ZeroClipboard
 //= require cocoon
+//= require jquery-ui-timepicker-addon
 //= require_tree .
+
+
+jQuery.ajaxSetup({
+  'beforeSend': function(xhr) { xhr.setRequestHeader("Accept", "text/javascript") }
+});
+
+$.fn.subSelectWithAjax = function() {
+  var that = this;
+
+  this.change(function() {
+    $.post(that.attr('rel'), {id: that.val()}, null, "script");
+  });
+}
 
 $.extend( $.fn.dataTableExt.oStdClasses, {
     "sWrapper": "dataTables_wrapper form-inline"
 } );
 
 jQuery(document).ready(function($) {
-	$('select[multiple="multiple"]').select2({ width: "element" });
 
+  //inizializzazione del datetime picker jquery-ui-timepicker-addon
+  $('.date').datetimepicker({
+     beforeShow: function(input, inst)
+    {
+        inst.dpDiv.css({marginTop: -input.offsetHeight + 80 + 'px', marginLeft: input.offsetWidth + 'px'});
+    },
+    dateFormat: "yy-mm-dd",
+    timeFormat: "hh:mm:ss"
+
+  });
+
+
+
+  //popolazione dell'attributo rel con i client appartenti alla società selezionata nel dropdown
+  $("#report_company_id").subSelectWithAjax();
+
+  //inizializzazione del plugin select2 per gli elementi di dropdown e select
+  $('select[multiple="multiple"]').select2({ width: "element" });
 	$('select').select2({  width: "element"  });
 
+  //configurazione dei datatable per filtraggio e paginazione
 	$('.datatable').dataTable({
   		"sDom": "<'row-fluid'<'span2'l><'span4'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
 

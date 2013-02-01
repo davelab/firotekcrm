@@ -1,5 +1,15 @@
 <%= simple_form_for @category, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :name %>
+
+<%= link_to "aggiungi categoria", "#",  :class => 'btn btn-success', :id => "add-category" %>
+
+
+<div class="inputs-container">
+
+	<div class="category-inputs">
+  	<%= f.input :name, :input_html => {:name => "category[][name]"} %>
+ 	</div>
+
+</div>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

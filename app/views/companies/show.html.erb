@@ -25,14 +25,16 @@
 <hr>
 <!--  END HEAD -->
  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-        <li class="active"><a href="#company-details" data-toggle="tab"><h3><i class="icon-briefcase"></i></h3></a></li>
+        <li class="<%= 'active' unless params[:page]%>"><a href="#company-details" data-toggle="tab"><h3><i class="icon-briefcase"></i></h3></a></li>
         <li><a href="#note-details" data-toggle="tab"><h3><i class="icon-pushpin"></i></h3></a></li>
+        <li class="<%= 'active' if params[:page]%>"><a href="#reports-details" data-toggle="tab"><h3><i class="icon-file"></i></h3></a></li>
 </ul>
 
 <div id="company-tab-content" class="tab-content">
 
 <!-- COMPANY DETAILS -->
-<div id="company-details" class="tab-pane active">
+<div id="company-details" class="tab-pane <%= 'active' unless params[:page]%>">
+
 <!--  Box profilo aziendale -->
   <div class="row-fluid">
   <div class="box span6">
@@ -44,7 +46,9 @@
     </h2>
   </div>
     <div class="box-content">
+       <p><%= @company.description %></p>
 <dl class="dl-horizontal">
+
         <dt><strong>Categoria:</strong></dt>
         <dd><%=t @company.category.name %></dd>    
         <dt><strong>Indirizzo:</strong></dt>
@@ -60,6 +64,7 @@
       </dl> 
     <!-- Visualizza la mappa solo se è presente l'indirizzo -->
     <%= gmaps({ "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 }, "markers"  => {"data" => @mapCompany } }) if @company.address? %>
+
 
       
      
@@ -85,7 +90,10 @@
 
       <% @company.clients.each do |client| %>
          <tr>
-          <td><%= link_to client.full_name, client_path(client) %></td>
+          <td><%= link_to client.full_name, client_path(client) %><br>
+            <small><%= client.position %></small>
+          </td>
+          <td></td>
           <td><i class="icon-phone"></i> <%= number_to_phone(client.mobile) %> </td>
           <td><i class="icon-envelope"></i> <%= mail_to client.email %></td>
         </tr>
@@ -128,6 +136,27 @@
   </div>
 </div>
 <!-- COMPANY DETAILS PANEL -->
+
+
+<div id="reports-details" class="tab-pane <%= 'active' if params[:page]%>">
+  <div class="box span11">
+    <div class="box-header">
+      <h2>
+        <i class="icon-file"></i><span class="break"></span>
+        Reports
+      </h2>
+    </div>
+    <div class="box-content">
+      <div id="reports">
+
+          <%= render :partial => 'report_pagination' %>
+            <%= render @reports %> 
+          <%= render :partial => 'report_pagination' %>
+          
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- NOTE PANEL -->
 <div id="note-details" class="tab-pane">

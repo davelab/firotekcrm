@@ -1,13 +1,18 @@
 FirotekCRM::Application.routes.draw do
+  resources :reports
+
   devise_for :users
 
   resources :categories
 
   resources :companies do
     resources :notes
+    resources :reports
   end
 
   resources :clients
+
+  match '/companies/clients_associated_to_company' => 'companies#clients_associated_to_company'
 
 
   # The priority is based upon order of creation:

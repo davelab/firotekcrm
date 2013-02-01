@@ -9,7 +9,7 @@
 <div class="box">
 <div class="box-header">
   <h2>
-      <i class="icon-group"></i>
+      <i class="icon-suitcase"></i>
       <span class="break"></span>
 
     <%=t '.title', :default => model_class.model_name.human.pluralize %>
@@ -20,11 +20,14 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th>Indirizzo</th>
+      
       <th>Acquisizione</th>
+      <th>User</th>
       <th><%= model_class.human_attribute_name(:category_id) %></th>
-      <th>Regione</th>
       <th>Appaltatrice</th>
+      <th>Indirizzo</th>
+      <th>Regione</th>
+      
 
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -34,16 +37,33 @@
       <tr>
 
         <td><%= link_to company.name.titleize, company_path(company) %></td>
-        <td><%= company.full_address %></td>
+        
+
         <td><%= Company.getAcquisition(company.acquisition) %></td>
+
+
+      
+
+        <td>
+            
+       <%=  company.user.map { |u| u.username }.join(", ") %>
+          
+          
+        </td>
+
         <td  <%= "class=red" if company.is_global_service  %>><%=t company.category.name %></td>
+        <td>
+          <% company.associated_company.each do |company_global_service| %>
+            
+             <%= link_to company_global_service.name, company_path(company_global_service) %> 
+           
+          <% end %>
+        </td>
+        <td><%= company.full_address %></td>
+
         <td><%= company.region %></td>
 
-        <td><% company.associated_company.each do |company_global_service| %>
-          
-           <%= link_to company_global_service.name, company_path(company_global_service) %> 
-         
-        <% end %></td>
+
   
         <td>
           <% if can? :update, @company %>

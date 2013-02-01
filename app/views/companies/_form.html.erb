@@ -28,6 +28,8 @@
 
     <%= f.association :category, :as => :select, label: "Categoria" %>
 
+
+
     <%= 
       f.association :clients, 
       :collection => Client.all(order: :surname),
@@ -37,8 +39,15 @@
 
     <%= 
       f.association :associated_company, 
-      :collection => Company.global_services(order: :name),
+      :collection => Company.all(order: :name),
       label: "Aziende Associate"
+    %>
+
+    <%= 
+      f.association :user, 
+      :collection => User.all(order: :username),
+      label_method: :username,
+      label: "User Associati"
     %>
 
 
@@ -46,7 +55,7 @@
 
   </div>
 </div>
-
+<%= f.input :description, :label => "Descrizione" %>
 
   
   <div class="form-actions">

@@ -23,8 +23,21 @@
         <a class="brand" href="#">FirotekCRM</a>
         <div class="nav-collapse header-nav">
           <ul class="nav">
-            <li><%= link_to link_icon("user") + "Clients", clients_path %></li>
-            <li><%= link_to link_icon("group") + "Companies", companies_path %></li>
+            <li class="dropdown"><%= link_to link_icon("user") + " Clients", clients_path, :class => "dropdown-toggle" %>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "nuovo", new_client_path %></li>
+                </ul>
+            </li>
+            <li class="dropdown"><%= link_to link_icon("suitcase") + " Companies", companies_path, :class => "dropdown-toggle" %>
+              <ul class="dropdown-menu">
+                <li><%= link_to "nuova", new_company_path %></li>
+              </ul>
+            </li> 
+            <li class="dropdown"><%= link_to link_icon("file") + " Reports", reports_path, :class => "dropdown-toggle" %>
+              <ul class="dropdown-menu">
+                <li><%= link_to "nuovo", new_report_path %></li>
+              </ul>
+            </li>
           </ul>
           <ul class="nav pull-right">
             <li class="dropdown">

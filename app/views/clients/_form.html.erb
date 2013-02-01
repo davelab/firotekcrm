@@ -33,6 +33,12 @@
     label: "Azienda"
 	%>
 
+ 
+
+    <%=f.input :user_id, :as => :select, label: "User Associato", :collection => User.all, :value_method => :id, :label_method => :username  %>
+
+
+
 
   <%= f.input :description %>
 

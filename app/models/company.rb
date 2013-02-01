@@ -21,7 +21,10 @@ class Company < ActiveRecord::Base
 						:longitude,
 						:note_ids,
 						:acquisition,
-						:province
+						:description,
+						:province, 
+						:user_ids
+						
 	#END Attributes Properties
 
 	#Relations
@@ -35,8 +38,11 @@ class Company < ActiveRecord::Base
 		has_many :inverse_companies_relationship, :class_name => "CompaniesRelationship", :foreign_key => "associated_company_id"
 		has_many :inverse_associated_company, :through => :inverse_companies_relationship, :source => :company
 
+		has_many :user_company_assignments
+		has_many :user, :through => :user_company_assignments
 
 		has_many :notes
+		has_many :reports
 
 		belongs_to :category
 	#END Relations
@@ -73,6 +79,7 @@ class Company < ActiveRecord::Base
 	#END Custom Methods
 
 	#Scopes
+		#recupera tutte le società che hanno il campo is_global_service vero
 		scope :global_services, where(:is_global_service => true)
 	#END Scopes
 

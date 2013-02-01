@@ -1,0 +1,22 @@
+<div class="report-block">
+	<div class="report-block-text">
+	<br>
+
+	
+		<h3><%=t report.title %> 	<span class="badge badge-info"><i class="icon-user"></i> <%=  owned(report) ? "Personale" : report.user.username %></span> </h3> 
+	
+		
+
+		<p><%= report.description %></p>
+		<p>Referenti Report: <b><%= link_to report.client.full_name, client_path(report.client.id) %></b> <small><%= report.client.position %></small></p>
+	</div>
+	<%  ex_date = report.executed_at %> 
+	<div class="report-block-date">
+		<h2><%= ex_date.strftime("%d") %></h2>
+		<%= localize(ex_date, :format => "%b %Y") %><br>
+		<i class="icon-time"></i> <%= ex_date.strftime("%H:%M") %>
+	</div>
+	
+	
+</div>
+

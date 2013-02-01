@@ -17,7 +17,8 @@ class CompaniesController < ApplicationController
   # GET /companies/1
   # GET /companies/1.json
   def show
-    @company = Company.includes(:category, :clients, :notes).find(params[:id])
+    @company = Company.includes(:category, :clients, :notes, :reports).find(params[:id])
+    @reports = @company.reports.paginate(:page => params[:page], :per_page => 30).order(:executed_at).reverse_order
 
     @notes = Note.new
 
@@ -87,5 +88,17 @@ class CompaniesController < ApplicationController
       format.html { redirect_to companies_url }
       format.json { head :no_content }
     end
+  end
+
+  def clients_associated_to_company
+      if params[:id].present?
+        @associated_clients = Company.find(params[:id]).clients
+      else
+        @associated_cliets = []
+      end
+
+      respond_to do |format|
+        format.js
+      end
   end
 end

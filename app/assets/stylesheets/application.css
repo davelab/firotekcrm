@@ -15,5 +15,7 @@
  *= require dataTables/extras/TableTools_JUI
  *= require dataTables/jquery.dataTables.bootstrap
  *= require gmaps4rails
+ *= require redmond/jquery-ui.css
+ *= require redmond/jquery.ui.theme.css
  *= require_tree .
  */

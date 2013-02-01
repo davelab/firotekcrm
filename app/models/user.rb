@@ -2,6 +2,10 @@ class User < ActiveRecord::Base
 
   has_many :assignments
   has_many :roles, :through => :assignments
+  has_many :client
+
+  has_many :user_company_assignments
+  has_many :clients, :through => :user_company_assignments
   
 
   validates :username,  presence: {message: "campo obbligatorio"}
@@ -22,5 +26,9 @@ end
 def get_role
 roles.each { |role| role.name.downcase }
 end
+
+#Restituisce tutti gli utenti non associati a un client
+scope :missing_user,
+    includes(:client).where("clients.id is null")
 end
 

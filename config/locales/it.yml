@@ -132,20 +132,20 @@ it:
         other: ! 'Non posso salvare questo %{model}: %{count} errori.'
   helpers:
     links:
-      edit: ! Aggiorna
+      edit: ! Modifica
       back: ! Lista
       destroy: ! Elimina
       new: ! Nuovo 
       cancel: ! Cancella
     titles:
       new: Crea %{model}
-      edit: Aggiorna %{model}
+      edit: Modifica %{model}
     select:
       prompt: Per favore, seleziona
     submit:
       create: Crea %{model}
       submit: Invia %{model}
-      update: Aggiorna %{model}
+      update: Modifica %{model}
   number:
     currency:
       format:

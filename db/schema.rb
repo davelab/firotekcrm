@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130118152300) do
+ActiveRecord::Schema.define(:version => 20130131093734) do
+
+  create_table "Roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "slug"
+  end
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -43,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20130118152300) do
     t.string   "province"
     t.string   "position"
     t.text     "description"
+    t.integer  "user_id"
   end
 
   create_table "companies", :force => true do |t|
@@ -65,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20130118152300) do
     t.string   "region"
     t.string   "province"
     t.integer  "acquisition"
+    t.text     "description"
   end
 
   create_table "companies_relationships", :force => true do |t|
@@ -88,12 +97,26 @@ ActiveRecord::Schema.define(:version => 20130118152300) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "roles", :force => true do |t|
-    t.string   "name"
+  create_table "reports", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "company_id"
+    t.integer  "client_id"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "executed_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "user_company_assignments", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "company_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "slug"
   end
+
+  add_index "user_company_assignments", ["company_id"], :name => "index_user_company_assignments_on_company_id"
+  add_index "user_company_assignments", ["user_id"], :name => "index_user_company_assignments_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -109,7 +132,6 @@ ActiveRecord::Schema.define(:version => 20130118152300) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "username"
-    t.integer  "client_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

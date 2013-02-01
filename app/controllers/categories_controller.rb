@@ -40,16 +40,18 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.json
   def create
-    @category = Category.new(params[:category])
+  params[:category].each do |cat_item|
+     Category.create(cat_item)
+  end
 
     respond_to do |format|
-      if @category.save
-        format.html { redirect_to @category, notice: 'Category was successfully created.' }
+      
+        format.html { redirect_to categories_path, notice: 'Category was successfully created.' }
         format.json { render json: @category, status: :created, location: @category }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @category.errors, status: :unprocessable_entity }
-      end
+      # else
+      #   format.html { render action: "new" }
+      #   format.json { render json: @category.errors, status: :unprocessable_entity }
+      # end
     end
   end
 
