@@ -1,24 +1,7 @@
 <%- model_class = Report -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
-</div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
-  <dd><%= @report.user_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:company_id) %>:</strong></dt>
-  <dd><%= @report.company_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:client_id) %>:</strong></dt>
-  <dd><%= @report.client_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @report.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @report.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:executed_at) %>:</strong></dt>
-  <dd><%= @report.executed_at %></dd>
-</dl>
 
-<div class="form-actions">
+
   <%= link_to t('.back', :default => t("helpers.links.back")),
               reports_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
@@ -28,4 +11,34 @@
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
+<div class="box">
+  <div class="box-header">
+    <h2>
+      <i class="icon-file"></i><span class="break"></span>
+        <%=t '.title', :default => model_class.model_name.human %>
+    </h2>
+  </div>
+  <div class="box-content">
+    <dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @report.user.username %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:company_id) %>:</strong></dt>
+  <dd><%= @report.company.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:client_id) %>:</strong></dt>
+  <dd><%= @report.client.full_name %></dd>
+  <dt><strong>Tipologia:</strong></dt>
+  <dd><%= @report.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @report.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:executed_at) %>:</strong></dt>
+  <dd><%= @report.executed_at %></dd>
+</dl>
+
+
+
+
+  </div>
 </div>
+
+
+
