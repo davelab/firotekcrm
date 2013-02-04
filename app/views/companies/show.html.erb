@@ -115,17 +115,17 @@
       </div>
       <div class="box-content">
         <ul class="record-list">
-      <% unless @company.is_global_service? %>
+
         <% @company.associated_company.each do |company_global_service| %>
           <li> 
            <%= link_to company_global_service.name, company_path(company_global_service) %> 
           </li>
         <% end %>
-      <% else %>
+
           <% for company in @company.inverse_associated_company %>
             <li><%= link_to company.name, company_path(company) %></li>
           <% end %>
-      <% end %>
+
       </ul>
       </div>
     </div>

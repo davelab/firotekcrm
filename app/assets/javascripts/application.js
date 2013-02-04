@@ -47,8 +47,7 @@ jQuery(document).ready(function($) {
     {
         inst.dpDiv.css({marginTop: -input.offsetHeight + 80 + 'px', marginLeft: input.offsetWidth + 'px'});
     },
-    dateFormat: "yy-mm-dd",
-    timeFormat: "hh:mm:ss"
+    dateFormat: "yy-mm-dd"
 
   });
 
