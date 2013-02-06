@@ -34,15 +34,15 @@ class Company < ActiveRecord::Base
 		#company
 		has_many :companies_relationship
 		has_many :associated_company, :through => :companies_relationship
-		
+		#company inverse association
 		has_many :inverse_companies_relationship, :class_name => "CompaniesRelationship", :foreign_key => "associated_company_id"
 		has_many :inverse_associated_company, :through => :inverse_companies_relationship, :source => :company
-
+		#user
 		has_many :user_company_assignments
 		has_many :user, :through => :user_company_assignments
 
 		has_many :notes
-		has_many :reports
+		has_many :reports, :dependent => :destroy
 
 		belongs_to :category
 	#END Relations
@@ -50,6 +50,7 @@ class Company < ActiveRecord::Base
 	#Nested attributes
 		accepts_nested_attributes_for :clients
 		accepts_nested_attributes_for :notes, :reject_if => :all_blank, :allow_destroy => true
+
 	#end Nested attributes
 	
 
