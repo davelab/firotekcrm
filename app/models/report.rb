@@ -6,7 +6,7 @@ class Report < ActiveRecord::Base
 
   REPORT_TYPES = [ "Visita", "Telefonata",  "Sopralluogo Tecnico",  "Porta a porta" ]
 
-  validates :company_id, :title, :description, :executed_at, presence: {message: "campo obbligatorio"}
+  validates  :title, :description, :executed_at, presence: {message: "campo obbligatorio"}
 
 
 

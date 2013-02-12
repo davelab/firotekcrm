@@ -8,7 +8,9 @@
 		
 
 		<p><%= report.description %></p>
+		<% if report.client_id %>
 		<p>Referenti Report: <b><%= link_to report.client.full_name, client_path(report.client.id) %></b> <small><%= report.client.position %></small></p>
+		<% end %>
 	</div>
 	<%  ex_date = report.executed_at %> 
 	<div class="report-block-date">

@@ -16,4 +16,12 @@ class Ability
     
     can :read, :all
   end
+
+  def seller
+    can :read,  :all
+  end 
+
+  def superseller
+    can :read, :all
+  end
 end

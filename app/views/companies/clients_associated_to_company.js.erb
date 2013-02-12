@@ -1,1 +1,1 @@
-$("#report_client_id").html('<%= escape_javascript( options_for_select(@associated_clients.map {|sc| [sc.full_name, sc.id]}).gsub(//n, '').html_safe) %>;');
+$("#report_client_id").html('<%= escape_javascript( options_for_select(@associated_clients.map {|sc| [sc.full_name, sc.id]}.insert(0, ["", ""])).gsub(//n, '').html_safe) %>;');

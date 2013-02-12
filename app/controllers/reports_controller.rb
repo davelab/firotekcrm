@@ -53,7 +53,7 @@ class ReportsController < ApplicationController
         format.html { redirect_to new_report_path, notice: 'Report creato con successo.' }
         format.json { render json: new_report_path, status: :created, location: @report }
         else
-          format.html { redirect_to @report, notice: 'Report creato con successo.' }
+          format.html { redirect_to reports_path, notice: 'Report creato con successo.' }
         format.json { render json: @report, status: :created, location: @report }
         end
       else
@@ -70,8 +70,13 @@ class ReportsController < ApplicationController
 
     respond_to do |format|
       if @report.update_attributes(params[:report])
-        format.html { redirect_to @report, notice: 'Report was successfully updated.' }
-        format.json { head :no_content }
+        if (params[:commit] == 'Salva e Nuovo') 
+          format.html { redirect_to new_report_path, notice: 'Report aggiornato' }
+          format.json { head :no_content }
+        else
+            format.html { redirect_to @report, notice: 'Report aggiornato' }
+            format.json { head :no_content }
+        end
       else
         format.html { render action: "edit" }
         format.json { render json: @report.errors, status: :unprocessable_entity }

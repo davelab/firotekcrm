@@ -23,7 +23,7 @@
   <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
   <dd><%= @report.user.username %></dd>
   <dt><strong><%= model_class.human_attribute_name(:company_id) %>:</strong></dt>
-  <dd><%= @report.company.name %></dd>
+  <dd><%= @report.company.name if @report.company_id %></dd>
   <dt><strong><%= model_class.human_attribute_name(:client_id) %>:</strong></dt>
   <dd><%= @report.client.full_name if @report.client_id %></dd>
   <dt><strong>Tipologia:</strong></dt>
