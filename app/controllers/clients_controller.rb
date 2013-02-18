@@ -1,8 +1,9 @@
 class ClientsController < ApplicationController
+  
   # GET /clients
   # GET /clients.json
   def index
-    @clients = Client.includes(:companies, :user).all
+    # @clients = Client.includes(:companies, :user).all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @clients }
