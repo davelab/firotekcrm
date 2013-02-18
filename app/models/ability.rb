@@ -14,14 +14,14 @@ class Ability
 
   def supervisor
     
-    can :read, :all
+    can  :read, :all
   end
 
   def seller
-    can :read,  :all
+    cannot :destroy,  :all
   end 
 
   def superseller
-    can :read, :all
+    cannot :destroy, :all
   end
 end
