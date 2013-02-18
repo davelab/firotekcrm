@@ -1,7 +1,7 @@
 class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.json
-
+load_and_authorize_resource
 
   def index
     @companies = Company.all
@@ -33,7 +33,7 @@ class CompaniesController < ApplicationController
   # GET /companies/new
   # GET /companies/new.json
   def new
-    @company = Company.new
+    #@company = Company.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,13 +43,13 @@ class CompaniesController < ApplicationController
 
   # GET /companies/1/edit
   def edit
-    @company = Company.find(params[:id])
+  #  @company = Company.find(params[:id])
   end
 
   # POST /companies
   # POST /companies.json
   def create
-    @company = Company.new(params[:company])
+    #@company = Company.new(params[:company])
 
     respond_to do |format|
       if @company.save
@@ -65,7 +65,7 @@ class CompaniesController < ApplicationController
   # PUT /companies/1
   # PUT /companies/1.json
   def update
-    @company = Company.find(params[:id])
+    #@company = Company.find(params[:id])
 
     respond_to do |format|
       if @company.update_attributes(params[:company])
@@ -81,7 +81,7 @@ class CompaniesController < ApplicationController
   # DELETE /companies/1
   # DELETE /companies/1.json
   def destroy
-    @company = Company.find(params[:id])
+    #@company = Company.find(params[:id])
     @company.destroy
 
     respond_to do |format|
