@@ -1,9 +1,11 @@
 class ClientsController < ApplicationController
+
   load_and_authorize_resource
   # GET /clients
   # GET /clients.json
   def index
      @clients = Client.includes(:companies, :user).all
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @clients }
