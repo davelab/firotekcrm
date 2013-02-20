@@ -36,7 +36,7 @@
     <% @companies.each do |company| %>
       <tr>
 
-        <td><%= link_to company.name.titleize, company_path(company) %></td>
+        <td><%= link_to  company.name.titleize, company_path(company) %></td>
         
 
         <td><%= Company.getAcquisition(company.acquisition) %></td>
@@ -79,8 +79,12 @@
                       <% end %>
         </td>
       </tr>
+
     <% end %>
   </tbody>
 </table>
+
+
+
 </div>
 </div>

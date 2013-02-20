@@ -732,16 +732,18 @@
 	},
 	"file_history":
 	[
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/companies_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/ability.rb",
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/reports/_report.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/report.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/clients_associated_to_company.js.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/company.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/companies_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/sessions/new.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/application.js",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
@@ -797,7 +799,6 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/registrations/edit.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/devise.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114085658_remove_user_id_from_clients.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_client_details.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114104737_add_cliend_id_to_users.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/helpers/companies_helper.rb",
@@ -823,7 +824,6 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130110205755_raname_type_in_role.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/assignment.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121123150205_change_cap_field_in_companies.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/clients.js.coffee",
 		"/Users/dave/Desktop/phpinfo.php",
 		"/Users/dave/Sites/RoR/FirotekCRM/config/application.rb",
@@ -1084,6 +1084,14 @@
 		"selected_items":
 		[
 			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"abilit",
+				"app/models/ability.rb"
+			],
+			[
 				"report_contr",
 				"app/controllers/reports_controller.rb"
 			],
@@ -1118,10 +1126,6 @@
 			[
 				"compa",
 				"app/controllers/companies_controller.rb"
-			],
-			[
-				"appl",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"user_id",
@@ -1590,10 +1594,6 @@
 			[
 				"la",
 				"assets/css/layout.css"
-			],
-			[
-				"jqu",
-				"assets/js/jquery.ui.rcarousel.js"
 			]
 		],
 		"width": 0.0

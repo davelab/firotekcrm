@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
 
   has_many :assignments
   has_many :roles, :through => :assignments
+
   has_many :client
 
   has_many :user_company_assignments
@@ -24,7 +25,7 @@ def has_role?(role_sym)
 end
 
 def get_role
-roles.each { |role| role.name.downcase }
+  roles.each { |role| role.name.downcase }
 end
 
 #Restituisce tutti gli utenti non associati a un client

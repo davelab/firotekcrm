@@ -3,9 +3,11 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-
+  if can? :view_all_reports, @user
+    @reports = Report.all
+  else
     @reports = Report.where(:user_id => current_user.id)
-
+  end
 
     respond_to do |format|
       format.html # index.html.erb
