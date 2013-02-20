@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   has_many :client
 
   has_many :user_company_assignments
-  has_many :clients, :through => :user_company_assignments
+  has_many :companies, :through => :user_company_assignments
   
 
   validates :username,  presence: {message: "campo obbligatorio"}

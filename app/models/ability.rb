@@ -14,15 +14,16 @@ class Ability
 
   def supervisor
     can  :read, :all
-
+    can :view_all_reports
   end
 
   def seller
     can :manage, :all
     cannot :destroy, :all
-    # can :index, Company do |company|
-    #   company.user_ids.include? @user.id
-    # end
+   
+    cannot :show, Company do |company|
+      !company.user_ids.include? @user.id
+    end
 
   end 
 

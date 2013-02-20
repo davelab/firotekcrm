@@ -1,4 +1,6 @@
 FirotekCRM::Application.routes.draw do
+  get "dashboard/index"
+
   resources :reports
 
   devise_for :users
@@ -13,6 +15,11 @@ FirotekCRM::Application.routes.draw do
   resources :clients
 
   match '/companies/clients_associated_to_company' => 'companies#clients_associated_to_company'
+  
+  authenticated :user do
+    root :to => "dashboard#index"
+  end
+  root :to => "clients#index"
 
 
   # The priority is based upon order of creation:
@@ -64,7 +71,7 @@ FirotekCRM::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'clients#index'
+
 
   # See how all your routes lay out with "rake routes"
 

@@ -82,6 +82,9 @@ class Company < ActiveRecord::Base
 	#Scopes
 		#recupera tutte le società che hanno il campo is_global_service vero
 		scope :global_services, where(:is_global_service => true)
+		
+		scope :user_owned, lambda { |uid| includes(:user).where('user_id = ?', uid) }
+	
 	#END Scopes
 
 	def self.to_csv(options = {})

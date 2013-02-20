@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   	protect_from_forgery
 
   	rescue_from CanCan::AccessDenied do |exception|
-    	redirect_to request.referer, :alert => "Non hai le autorizzazioni necessarie per eseguire questa operazione"
+    	redirect_to root_url, :alert => "Non hai le autorizzazioni necessarie per eseguire questa operazione"
   	end
 end
