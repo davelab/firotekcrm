@@ -20,6 +20,7 @@ class Ability
   def seller
     can :manage, :all
     cannot :destroy, :all
+    cannot :view_all_reports
    
     cannot :show, Company do |company|
       !company.user_ids.include? @user.id
@@ -29,6 +30,7 @@ class Ability
 
   def superseller
     can :manage, :all
+    cannot :view_all_reports
     cannot :destroy, :all
   end
 end

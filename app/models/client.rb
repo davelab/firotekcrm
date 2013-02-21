@@ -24,8 +24,8 @@ class Client < ActiveRecord::Base
   
   accepts_nested_attributes_for :companies
 
-  validates :name, :surname, :status, :email, :mobile,  presence: {message: "campo obbligatorio"}
-  validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
+  validates :name, :surname, :status, :mobile, :user_id,  presence: {message: "campo obbligatorio"}
+  #validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
 
 	def full_name
 	    [name, surname].join(' ')
