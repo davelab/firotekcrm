@@ -28,6 +28,7 @@ class Ability
   end 
 
   def superseller
+    can :manage, :all
     cannot :destroy, :all
   end
 end
