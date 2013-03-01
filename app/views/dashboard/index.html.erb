@@ -2,23 +2,81 @@
   
   <strong>Attenzione!</strong> Questa pagina è in fase di sviluppo. presenterà la dashboard dell'utente loggato e funzionerà come Home del CRM.
 </div>
+
 <h2>Benvenuto <%= @user.username %></h2>
+
+<p>ruolo attuale: <b><%= @user.role_names %></b></p>
+
+<div class="container">
+
 <div class="page">
-	<div class="container">
+
 			<div class="row-fluid">
 				<div class="span12">
+
+
+
 					<div class="span4">
+					
+
 					<ul class="stat-list">
 		            <li>
 		              <label class="label-warning"><i class="icon-suitcase icon-white"></i></label>
-		              <h4><%= @count_companies %></h4>
+		              <h4><%= @tot_companies %></h4>
 		              <h4 class="sub">COMPANIES</h4>
 		            </li>
+
+		            <li>
+		              <label class="label-important"><i class="icon-user icon-white"></i></label>
+		              <h4><%= @tot_clients %></h4>
+		              <h4 class="sub">CLIENTS</h4>
+		            </li>
+
+		            <li>
+		              <label class="label-info"><i class="icon-file icon-white"></i></label>
+		              <h4><%= @tot_reports %></h4>
+		              <h4 class="sub">REPORTS</h4>
+		            </li>
+
+
 		          </ul>
+
 		      </div>
+		      <div class="span8">
+		      	<div class="circleStats">
+		      	 <div class="span3">
+		      	 	<div class="circleStatsItem">
+							
+							
+							<span class="percent">%</span>
+                        		<input class="knob" name="percentuale_companies" value="<%= @percentuale_companies %>" data-fgColor="#FA9306">
+                    	</div>
+		      	 
+		      	 	<div class="box-title-small">Companies associate: <strong><%= @tot_user_companies %></strong></div>
+		      	 </div>
+		      	
+		      	 <div class="span3">
+
+		      	 	<div class="circleStatsItem">
+						<span class="percent">%</span>
+		      	 		<input class="knob" name="percentuale_clienti" value="<%= @percentuale_clienti %>" data-fgColor="#BA4A48">
+		      	 		<div class="box-title-small">Client associati: <strong><%= @tot_user_client %></strong></div>
+		      	 	</div>
+
+		      	 </div>
+		      
+		      	 <div class="span3">
+		      	 	<div class="circleStatsItem">
+		      	 		<span class="percent">%</span>
+		      	 		<input class="knob" name="percentuale_report" value="<%= @percentuale_report %>" data-fgColor="#4085A6">
+		      	 		<div class="box-title-small">Report creati: <strong><%= @tot_user_reports %></strong></div>
+		      	 	</div>
+		      	 </div>
+		      </div>
+		  </div>
 				</div>
 			</div>
 			
-		</div>	
+</div>	
 
 </div>

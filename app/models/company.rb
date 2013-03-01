@@ -39,7 +39,7 @@ class Company < ActiveRecord::Base
 		has_many :inverse_associated_company, :through => :inverse_companies_relationship, :source => :company
 		#user
 		has_many :user_company_assignments
-		has_many :user, :through => :user_company_assignments
+		has_many :users, :through => :user_company_assignments
 
 		has_many :notes
 		has_many :reports, :dependent => :destroy
@@ -60,8 +60,8 @@ class Company < ActiveRecord::Base
 	#end Geocoder
 
   	#Validation
-		validates :name, :address, :cap, :email, :address, :city, :category_id,  presence: {message: "campo obbligatorio"}
-		validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
+		validates :name, :address, :cap, :address, :city, :category_id,  presence: {message: "campo obbligatorio"}
+		#validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
 		validates :cap, numericality: {only_integer: true, message: "formato non corretto"}
 	#END Validation
 

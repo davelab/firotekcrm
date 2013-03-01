@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
-  if can? :view_all_reports, @user
+  if can? :view_all_records, @user
     @reports = Report.all
   else
     @reports = Report.where(:user_id => current_user.id)

@@ -4,7 +4,13 @@ class ClientsController < ApplicationController
   # GET /clients
   # GET /clients.json
   def index
-     @clients = Client.includes(:companies, :user).all
+
+  if can? :view_all_records, @user
+    @clients = Client.includes(:companies, :user).all
+  else
+    @clients = Client.includes(:companies, :user).where(:user_id => current_user.id)
+  end
+     
 
     respond_to do |format|
       format.html # index.html.erb

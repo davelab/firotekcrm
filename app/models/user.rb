@@ -24,8 +24,8 @@ def has_role?(role_sym)
   roles.any? { |r| r.name.underscore.to_sym == role_sym }
 end
 
-def get_role
-  roles.each { |role| role.name.downcase }
+def role_names
+  roles.map{|r| r.slug.downcase }.join(', ')
 end
 
 #Restituisce tutti gli utenti non associati a un client

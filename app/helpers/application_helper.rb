@@ -23,5 +23,12 @@ module ApplicationHelper
     	current_user.id == model.user_id
 	end
 
+	def percentage(n1, n2)
+	  return 0 if n2 == 0 || n1 == 0
+	  p = ((n2.to_f / n1.to_f) * 100)
+	  return p
+	end
+      
+
 
 end

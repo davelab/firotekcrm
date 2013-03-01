@@ -20,6 +20,7 @@
 //= require dataTables/extras/ZeroClipboard
 //= require cocoon
 //= require jquery-ui-timepicker-addon
+//= require jquery.knob.js
 //= require_tree .
 
 
@@ -40,6 +41,18 @@ $.extend( $.fn.dataTableExt.oStdClasses, {
 } );
 
 jQuery(document).ready(function($) {
+
+  $('.knob').knob({
+        'min':0,
+        'max':100,
+        'readOnly': true,
+        'width': 120,
+        'height': 120,
+        'dynamicDraw': true,
+        'thickness': 0.2,
+        'tickColorizeValues': true,
+        'skin':'tron'
+  });
 
   //inizializzazione del datetime picker jquery-ui-timepicker-addon
   $('.date').datetimepicker({

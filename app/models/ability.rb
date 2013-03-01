@@ -9,18 +9,18 @@ class Ability
 
   def admin
     can :manage, :all
-    can :view_all_reports
+    can :view_all_records
   end
 
   def supervisor
     can  :read, :all
-    can :view_all_reports
+    can :view_all_records
   end
 
   def seller
     can :manage, :all
     cannot :destroy, :all
-    cannot :view_all_reports
+    cannot :view_all_records
    
     cannot :show, Company do |company|
       !company.user_ids.include? @user.id
@@ -30,7 +30,7 @@ class Ability
 
   def superseller
     can :manage, :all
-    cannot :view_all_reports
+    cannot :view_all_records
     cannot :destroy, :all
   end
 end
