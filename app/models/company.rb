@@ -39,7 +39,7 @@ class Company < ActiveRecord::Base
 		has_many :inverse_associated_company, :through => :inverse_companies_relationship, :source => :company
 		#user
 		has_many :user_company_assignments
-		has_many :users, :through => :user_company_assignments
+		has_many :user, :through => :user_company_assignments
 
 		has_many :notes
 		has_many :reports, :dependent => :destroy
