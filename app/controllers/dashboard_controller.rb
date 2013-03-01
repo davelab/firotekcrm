@@ -11,7 +11,7 @@ class DashboardController < ApplicationController
   	@tot_user_client = Client.where(:user_id => current_user.id).count
     @tot_user_reports = Report.where(:user_id => current_user.id).count
     
-  	@tot_user_companies = Company.includes(:users).where('users.id' => current_user.id).count
+  	@tot_user_companies = Company.includes(:user).where('users.id' => current_user.id).count
 
 
     @percentuale_companies = percentage(@tot_companies, @tot_user_companies)
