@@ -2,10 +2,10 @@ class DashboardController < ApplicationController
   def index
   	@user = current_user
 
-    @companies = Company.all
+    @client = Client.all
 
   	@tot_companies = Company.all.count
-  	@tot_clients = @companies.count
+  	@tot_clients = @client.count
   	@tot_reports = Report.all.count
 
   	@tot_user_client = Client.where(:user_id => current_user.id).count

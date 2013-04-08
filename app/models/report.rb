@@ -4,7 +4,7 @@ class Report < ActiveRecord::Base
   belongs_to :company
   belongs_to :client
 
-  REPORT_TYPES = [ "Visita", "Telefonata",  "Sopralluogo Tecnico",  "Porta a porta" ]
+  REPORT_TYPES = [ "Visita", "Telefonata",  "Sopralluogo Tecnico",  "Porta a porta", "Intervento Tecnico" ]
 
   validates  :title, :description, :executed_at, presence: {message: "campo obbligatorio"}
 

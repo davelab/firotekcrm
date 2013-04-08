@@ -1,4 +1,4 @@
-<div class="report-block">
+<div class="report-block" <%= "style=border-left-color:#eb3e3e" if report.title == "Intervento Tecnico"  %>>
 	<div class="report-block-text">
 	<br>
 
@@ -13,7 +13,7 @@
 		<% end %>
 	</div>
 	<%  ex_date = report.executed_at %> 
-	<div class="report-block-date">
+	<div class="report-block-date" <%= "style=background:#eb3e3e" if report.title == "Intervento Tecnico"  %>>
 		<h2><%= ex_date.strftime("%d") %></h2>
 		<%= localize(ex_date, :format => "%b %Y") %><br>
 		<i class="icon-time"></i> <%= ex_date.strftime("%H:%M") %>

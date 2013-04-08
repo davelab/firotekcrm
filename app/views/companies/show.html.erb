@@ -26,7 +26,7 @@
 <!--  END HEAD -->
  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
         <li class="<%= 'active' unless params[:page]%>"><a href="#company-details" data-toggle="tab"><h3><i class="icon-briefcase"></i></h3></a></li>
-        <li><a href="#note-details" data-toggle="tab"><h3><i class="icon-pushpin"></i></h3></a></li>
+        <!-- <li><a href="#note-details" data-toggle="tab"><h3><i class="icon-pushpin"></i></h3></a></li> -->
         <li class="<%= 'active' if params[:page]%>"><a href="#reports-details" data-toggle="tab"><h3><i class="icon-file"></i></h3></a></li>
 </ul>
 
@@ -135,6 +135,33 @@
   <!-- END Box Global Services -->
 
 
+
+  <!-- Box User Associati -->
+      <div class="box span6" id="global_services">
+      <div class="box-header">
+        <h2>
+          <i class="icon-globe"></i><span class="break"></span>
+         Utenti associati
+        </h2>
+      </div>
+      <div class="box-content">
+        <ul class="record-list">
+
+        <% @company.user.each do |user| %>
+          <li> 
+           <%=  user.username %> 
+          </li>
+        <% end %>
+
+         
+
+      </ul>
+      </div>
+    </div>
+
+  <!-- END Box User Associati -->
+
+
   </div>
 </div>
 <!-- COMPANY DETAILS PANEL -->
@@ -161,7 +188,7 @@
 </div>
 
 <!-- NOTE PANEL -->
-<div id="note-details" class="tab-pane">
+<!-- <div id="note-details" class="tab-pane">
   <div class="box span11">
     <div class="box-header">
       <h2>
@@ -184,7 +211,7 @@
 
     </div>
   </div>
-</div>
+</div> -->
 <!-- END NOTE PANEL -->
 
 

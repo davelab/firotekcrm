@@ -33,4 +33,8 @@ class Ability
     cannot :view_all_records
     cannot :destroy, :all
   end
+
+  def technician
+    can :manage, Report
+  end
 end
