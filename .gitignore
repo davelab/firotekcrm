@@ -9,6 +9,7 @@
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
+/config/database.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
@@ -23,8 +24,8 @@ doc/
 .idea
 
 config/*.yml
-firoteckCRM.sublime-workspace
-firoteckCRM.sublime-project
+firoteckcrm.sublime-workspace
+firoteckcrm.sublime-project
 
 *.rbc
 *.sassc

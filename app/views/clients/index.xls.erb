@@ -1,0 +1,72 @@
+
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Ruolo</th>
+    <th>Assegnato a</th>
+    <th>Cellulare</th>
+    <th>Cellulare Secondario</th>
+    <th>Tel. ufficio</th>
+    <th>e-mail</th>
+    <th>Indirizzo</th>
+    <th>CAP</th>
+    <th>citta</th>
+    <th>Provincia</th>
+    <th>Regione</th>
+    <th>Stato</th>
+    <th>Azienda</th>
+    <th>Stato acquisizione</th>
+    <th>Appaltatrice</th>
+    <th>e-mail</th>
+    <th>Indirizzo</th>
+    <th>CAP</th>
+    <th>Citta</th>
+    <th>Provincia</th>
+    <th>Regione</th>
+    <th>Tel.</th>
+    <th>Cellulare</th>
+    <th>FAX</th>
+    <th>Website</th>
+    
+  </tr>
+
+<% @clients.each do |client| %>
+  <tr>
+    <td><%= client.name %></td>
+    <td><%= client.surname %></td>
+    <td><%= client.position %></td>
+    <td><%= client.user.username if client.user_id %></td>
+    <td><%= client.mobile %></td>
+    <td><%= client.secondary_mobile %></td>
+    <td><%= client.office %></td>
+    <td><%= client.email %></td>
+    <td><%= client.address %></td>
+    <td><%= client.cap %></td>
+    <td><%= client.city %></td>
+    <td><%= client.province %></td>
+    <td><%= client.region %></td>
+    <td><%= client.status %></td>
+    <% client.companies.each do |company| %>
+    <td><%= company.name %></td>
+    <td><%= company.acquisition %></td>
+    <td><%= "APPALTATRICE" if company.is_global_service %></td>
+    <td><%= company.email %></td>
+    <td><%= company.address %></td>
+    <td><%= company.cap %></td>
+    <td><%= company.city %></td>
+    <td><%= company.province %></td>
+    <td><%= company.region %></td>
+    <td><%= company.phone %></td>
+    <td><%= company.mobile %></td>
+    <td><%= company.fax %></td>
+    <td><%= company.website %></td>
+    <% end %>
+    
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
