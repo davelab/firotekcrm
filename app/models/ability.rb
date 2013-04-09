@@ -10,17 +10,20 @@ class Ability
   def admin
     can :manage, :all
     can :view_all_records
+    can :export_xls, :all
   end
 
   def supervisor
     can  :read, :all
     can :view_all_records
+    cannot :export_xls, :all
   end
 
   def seller
     can :manage, :all
     cannot :destroy, :all
     cannot :view_all_records
+    cannot :export_xls, :all
    
     cannot :show, Company do |company|
       !company.user_ids.include? @user.id
@@ -32,6 +35,7 @@ class Ability
     can :manage, :all
     cannot :view_all_records
     cannot :destroy, :all
+    cannot :export_xls, :all
   end
 
   def technician

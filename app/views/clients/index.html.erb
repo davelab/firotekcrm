@@ -4,9 +4,9 @@
             new_client_path,
             :class => 'btn btn-primary' %>
 
-
-<%= link_to 'esporta xls', url_for(:format => 'xls') %>
-
+<% if can? :export_xls, :all  %>
+<%= link_to 'esporta xls', url_for(:format => 'xls'), :class => 'btn btn-success'  %>
+<% end %>
 
 <div class="box">
 <div class="box-header">
