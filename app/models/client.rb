@@ -14,7 +14,8 @@ class Client < ActiveRecord::Base
             :position, 
             :description, 
   					:company_ids,
-            :user_id
+            :user_id,
+            :full_name
           
 
   has_many :partenership
