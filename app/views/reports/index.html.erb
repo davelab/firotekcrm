@@ -38,10 +38,8 @@
         <td><%= truncate(report.description, :length => 100, :separator => ' ') %></td>
 
         <td><%= link_to report.company.name, company_path(report.company_id) if report.company_id %></td>
-        <% @report.clients.each do |client| %>
-           
-            <%= link_to client.full_name, client_path(client) %>
-        <% end %>
+        
+        
         <td><%=l report.executed_at if report.executed_at %></td>
         <td><%=l report.created_at %></td>
         <td>
