@@ -21,7 +21,7 @@
       <th>Titolo</th>
       <th>Descrizione</th>
       <th><%= model_class.human_attribute_name(:company_id) %></th>
-      <th><%= model_class.human_attribute_name(:client_id) %></th>
+<!--       <th><%= model_class.human_attribute_name(:client_id) %></th> -->
       
       <th>Eseguito il</th>
       <th>Creato il</th>
@@ -38,11 +38,11 @@
         <td><%= truncate(report.description, :length => 100, :separator => ' ') %></td>
 
         <td><%= link_to report.company.name, company_path(report.company_id) if report.company_id %></td>
-        <td>
+<!--         <td>
           <% if report.client_id %>
             <%=  report.client.surname  %>
           <% end %>
-        </td>
+        </td> -->
         
         <td><%=l report.executed_at if report.executed_at %></td>
         <td><%=l report.created_at %></td>
