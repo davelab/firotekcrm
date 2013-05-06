@@ -760,6 +760,14 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.xls.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/schema.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/initializers/mime_types.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/.gitignore",
 		"/Users/dave/Sites/RoR/FirotekCRM/Gemfile",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/application.js",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/company.rb",
@@ -879,15 +887,7 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/notes/_company_notes.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/note/_company_notes.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_company_notes.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_note_fields.html.erb",
-		"/Users/dave/Library/Caches/Cleanup At Startup/Transmit/03475B46-F42A-4488-83D8-ED9D4073705E/loop_progetti.php",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/struttura-box.html",
-		"/Users/dave/Dropbox/Sublime/Packages/User/snippets/twitter_bootstrap/crm_box.sublime",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/locales/en.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121128161648_add_latitude_and_longitude_to_company.rb",
-		"/Users/dave/Desktop/linkperscaricare.txt",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/simple_form_bootstrap.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/companies_relationships.yml"
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_note_fields.html.erb"
 	],
 	"find":
 	{
@@ -906,6 +906,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"current_user",
+			"is_admin",
+			"mobile",
+			"%>",
+			"company",
+			"<%=",
+			"td",
+			"phone",
+			"province",
+			"city",
+			"cap",
+			"user",
+			"Azienda",
+			"citta",
+			"cap",
+			"indirizzo",
+			"user",
+			"compan",
+			"mobile",
+			"user",
+			"Phone",
+			"Gender",
+			"address",
 			"span2",
 			"span3",
 			"stat",
@@ -1010,30 +1033,7 @@
 			"therubyracer",
 			"python",
 			"hello",
-			"to scope",
-			"div",
-			"d4v1d37",
-			"cronache",
-			"border-top",
-			"#blue2-box",
-			"4",
-			"h3",
-			"#home-top-news",
-			"home-top-news",
-			"news",
-			"home-top",
-			"top",
-			"top_news_rubriche",
-			"sym_fields_select",
-			"giurisprudenza",
-			"dottrina",
-			"index",
-			"jpg",
-			"j",
-			";\n",
-			"43",
-			"icon-arrow",
-			"bkg"
+			"to scope"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1112,6 +1112,26 @@
 		"selected_items":
 		[
 			[
+				"ability",
+				"app/models/ability.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"clien",
+				"app/controllers/clients_controller.rb"
+			],
+			[
+				"ind",
+				"app/views/clients/index.html.erb"
+			],
+			[
+				"mi",
+				"config/initializers/mime_types.rb"
+			],
+			[
 				"gem",
 				"Gemfile"
 			],
@@ -1154,10 +1174,6 @@
 			[
 				"abil",
 				"app/models/ability.rb"
-			],
-			[
-				"clien",
-				"app/models/client.rb"
 			],
 			[
 				"dash",
@@ -1392,10 +1408,6 @@
 				"progress_giornaliero_firotek.TODO"
 			],
 			[
-				"ind",
-				"app/views/clients/index.html.erb"
-			],
-			[
 				"help",
 				"app/helpers/application_helper.rb"
 			],
@@ -1610,18 +1622,6 @@
 			[
 				"mig",
 				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
-			],
-			[
-				"shot",
-				"app/views/companies/show.html.erb"
-			],
-			[
-				"appp.css",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"applica.css",
-				"app/assets/stylesheets/application.css"
 			]
 		],
 		"width": 0.0
