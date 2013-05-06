@@ -19,20 +19,28 @@
     </h2>
   </div>
   <div class="box-content">
-    <dl class="dl-horizontal">
+    <ul class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
   <dd><%= @report.user.username %></dd>
+
+  <% if @report.company_id %>
   <dt><strong><%= model_class.human_attribute_name(:company_id) %>:</strong></dt>
   <dd><%= @report.company.name if @report.company_id %></dd>
+  <% end %>
+
+  <% if @report.client_id %>
   <dt><strong><%= model_class.human_attribute_name(:client_id) %>:</strong></dt>
-  <dd><%= @report.client.full_name if @report.client_id %></dd>
+  <dd><%= @report.client.full_name %></dd>
+  <% end %>
+
+
   <dt><strong>Tipologia:</strong></dt>
   <dd><%= @report.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @report.description %></dd>
   <dt><strong><%= model_class.human_attribute_name(:executed_at) %>:</strong></dt>
   <dd><%= @report.executed_at %></dd>
-</dl>
+</ul>
 
 
 
