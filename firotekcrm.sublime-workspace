@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"compan",
+				"company"
+			],
+			[
+				"report",
+				"report"
+			],
+			[
 				"tot_us",
 				"tot_user_companies"
 			],
@@ -32,10 +40,6 @@
 				"user_owned"
 			],
 			[
-				"compan",
-				"companies"
-			],
-			[
 				"compa",
 				"companies"
 			],
@@ -62,10 +66,6 @@
 			[
 				"repor",
 				"report"
-			],
-			[
-				"report",
-				"report_path"
 			],
 			[
 				"wid",
@@ -760,8 +760,14 @@
 	},
 	"file_history":
 	[
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/Gemfile",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/client.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.xls.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
@@ -881,13 +887,7 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/notes_controller.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/bootstrap.js.coffee",
 		"/Users/dave/Sites/RoR/FirotekCRM/config.ru",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/nested_form_for_note.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/notes/note.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/notes/note.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/notes/_company_notes.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/note/_company_notes.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_company_notes.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/_note_fields.html.erb"
+		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/nested_form_for_note.html.erb"
 	],
 	"find":
 	{
@@ -895,7 +895,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
 			"<project>"
@@ -906,6 +906,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"full_name",
+			"client_id",
+			"blank",
+			"company",
+			"comp",
+			"compn",
+			"if_blank",
+			"</dt>\n  <dd>",
+			"client",
+			"full_name",
 			"current_user",
 			"is_admin",
 			"mobile",
@@ -1023,17 +1033,7 @@
 			"clent",
 			"company",
 			"mobile",
-			"dashboard",
-			"thin",
-			"assets",
-			"clientsTable",
-			"Days",
-			"surename",
-			"\"",
-			"therubyracer",
-			"python",
-			"hello",
-			"to scope"
+			"dashboard"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1112,6 +1112,30 @@
 		"selected_items":
 		[
 			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"help",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"show",
+				"app/views/reports/show.html.erb"
+			],
+			[
+				"sho",
+				"app/views/companies/show.html.erb"
+			],
+			[
+				"index",
+				"app/views/companies/index.html.erb"
+			],
+			[
+				"/views/rep",
+				"app/views/reports/index.html.erb"
+			],
+			[
 				"ability",
 				"app/models/ability.rb"
 			],
@@ -1132,10 +1156,6 @@
 				"config/initializers/mime_types.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
 				"com",
 				"app/models/company.rb"
 			],
@@ -1150,10 +1170,6 @@
 			[
 				"control",
 				"app/controllers/clients_controller.rb"
-			],
-			[
-				"index",
-				"app/views/companies/index.html.erb"
 			],
 			[
 				"inde",
@@ -1190,10 +1206,6 @@
 			[
 				"user",
 				"app/models/user.rb"
-			],
-			[
-				"show",
-				"app/views/companies/show.html.erb"
 			],
 			[
 				"appliccont",
@@ -1356,10 +1368,6 @@
 				"db/migrate/20130124153412_create_user_company_assignments.rb"
 			],
 			[
-				"sho",
-				"app/views/companies/show.html.erb"
-			],
-			[
 				"devi",
 				"config/locales/devise.it.yml"
 			],
@@ -1406,10 +1414,6 @@
 			[
 				"todo",
 				"progress_giornaliero_firotek.TODO"
-			],
-			[
-				"help",
-				"app/helpers/application_helper.rb"
 			],
 			[
 				"appli",
@@ -1617,10 +1621,6 @@
 			],
 			[
 				"m",
-				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
-			],
-			[
-				"mig",
 				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
 			]
 		],
