@@ -7,7 +7,6 @@ class Client < ActiveRecord::Base
   					:cap,
   					:city, 
             :region,
-  					:status,
             :office, 
             :secondary_mobile, 
             :province, 
@@ -25,7 +24,7 @@ class Client < ActiveRecord::Base
   
   accepts_nested_attributes_for :companies
 
-  validates :name, :surname, :status, :mobile, :user_id,  presence: {message: "campo obbligatorio"}
+  validates :name, :surname, :mobile, :user_id,  presence: {message: "campo obbligatorio"}
   #validates :email, format: { with: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, message: "Formato non corretto" }  
 
 	def full_name

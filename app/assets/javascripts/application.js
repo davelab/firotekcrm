@@ -37,32 +37,32 @@ $.fn.subSelectWithAjax = function() {
 }
 
 $.extend( $.fn.dataTableExt.oStdClasses, {
-    "sWrapper": "dataTables_wrapper form-inline"
+  "sWrapper": "dataTables_wrapper form-inline"
 } );
 
 jQuery(document).ready(function($) {
 
   $('.knob').knob({
-        'min':0,
-        'max':100,
-        'readOnly': true,
-        'width': 120,
-        'height': 120,
-        'dynamicDraw': true,
-        'thickness': 0.2,
-        'tickColorizeValues': true,
-        'skin':'tron'
+    'min':0,
+    'max':100,
+    'readOnly': true,
+    'width': 120,
+    'height': 120,
+    'dynamicDraw': true,
+    'thickness': 0.2,
+    'tickColorizeValues': true,
+    'skin':'tron'
   });
 
   //inizializzazione del datetime picker jquery-ui-timepicker-addon
   $('.date').datetimepicker({
-     beforeShow: function(input, inst)
-    {
-        inst.dpDiv.css({marginTop: -input.offsetHeight + 80 + 'px', marginLeft: input.offsetWidth + 'px'});
-    },
-    dateFormat: "yy-mm-dd"
+   beforeShow: function(input, inst)
+   {
+    inst.dpDiv.css({marginTop: -input.offsetHeight + 80 + 'px', marginLeft: input.offsetWidth + 'px'});
+  },
+  dateFormat: "yy-mm-dd"
 
-  });
+});
 
 
 
@@ -71,35 +71,35 @@ jQuery(document).ready(function($) {
 
   //inizializzazione del plugin select2 per gli elementi di dropdown e select
   $('select[multiple="multiple"]').select2({ width: "element" });
-	$('select').select2({  width: "element"  });
+  $('select').select2({  width: "element"  });
 
   //configurazione dei datatable per filtraggio e paginazione
-	$('.datatable').dataTable({
-  		"sDom": "<'row-fluid'<'span2'l><'span4'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+  $('.datatable').dataTable({
+    "sDom": "<'row-fluid'<'span2'l><'span4'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
 
-          
-"oTableTools": {
+    
+    "oTableTools": {
       "aButtons": [
-        "copy",
-        "print",
-        {
-          "sExtends":    "collection",
-          "sButtonText": 'Save <span class="caret" />',
-          "aButtons":    [ "csv", "xls", "pdf" ]
-        }
+      "copy",
+      "print",
+      {
+        "sExtends":    "collection",
+        "sButtonText": 'Save <span class="caret" />',
+        "aButtons":    [ "csv", "xls", "pdf" ]
+      }
       ]
     },
-  		"sPaginationType": "bootstrap",
-  		"oLanguage": {
-      		"sSearch": "<i class='icon-search'></i>",
-      		"sZeroRecords": "Nessun elemento disponibile",
-      		"sLengthMenu": "Mostra _MENU_ righe",
-      		"sPrevious": "Precedente",
-      		"sNext": "Successivo",
-      		 "sInfo": "da <b>_START_</b> a <b>_END_</b> totali: <span class='label label-info'>_TOTAL_</span>",
-    	},
+    "sPaginationType": "bootstrap",
+    "oLanguage": {
+      "sSearch": "<i class='icon-search'></i>",
+      "sZeroRecords": "Nessun elemento disponibile",
+      "sLengthMenu": "Mostra _MENU_ righe",
+      "sPrevious": "Precedente",
+      "sNext": "Successivo",
+      "sInfo": "da <b>_START_</b> a <b>_END_</b> totali: <span class='label label-info'>_TOTAL_</span>",
+    },
 
-	});
+  });
 
 
 });

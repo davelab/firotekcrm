@@ -75,6 +75,31 @@
   </div>
   <!-- END Box profilo aziendale -->
 
+  <!-- Box User Associati -->
+      <div class="box span6" id="global_services">
+      <div class="box-header">
+        <h2>
+          <i class="icon-globe"></i><span class="break"></span>
+         Utenti associati
+        </h2>
+      </div>
+      <div class="box-content">
+        <ul class="record-list">
+
+        <% @company.user.each do |user| %>
+          <li> 
+           <%=  user.username %> 
+          </li>
+        <% end %>
+
+         
+
+      </ul>
+      </div>
+    </div>
+
+  <!-- END Box User Associati -->
+
   <!-- Box Clienti di riferimento -->
   <div class="box span6" id="client_references">
     <div class="box-header">
@@ -135,31 +160,6 @@
   <!-- END Box Global Services -->
 
 
-
-  <!-- Box User Associati -->
-      <div class="box span6" id="global_services">
-      <div class="box-header">
-        <h2>
-          <i class="icon-globe"></i><span class="break"></span>
-         Utenti associati
-        </h2>
-      </div>
-      <div class="box-content">
-        <ul class="record-list">
-
-        <% @company.user.each do |user| %>
-          <li> 
-           <%=  user.username %> 
-          </li>
-        <% end %>
-
-         
-
-      </ul>
-      </div>
-    </div>
-
-  <!-- END Box User Associati -->
 
 
   </div>
