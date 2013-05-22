@@ -1,0 +1,12 @@
+<h5>Task fatti</h5>
+<table class="table table-striped tasks">
+  <% @done_task.each do |d_task| %>
+  <tr>
+    <td width="2%"><input type="checkbox" name="done" data-task-id="<%= d_task.id %>" value="0" checked="checked" /></td>
+    <td width="13%">a: <span class="label"><%=   (d_task.user_id ?  d_task.assigned.username : "Tu" ) %></span> </td>
+    <td width="75%"><strong><%= d_task.description %></strong></td>
+    <td width="10%"><%= d_task.created_at.strftime('%d/%m/%Y') %></td>
+    
+  </tr>
+  <% end %>
+</table>

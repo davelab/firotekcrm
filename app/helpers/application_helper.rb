@@ -28,6 +28,10 @@ module ApplicationHelper
 	  p = ((n2.to_f / n1.to_f) * 100)
 	  return p
 	end
+
+	def tasks
+		return Task.where("(owner_id = ? OR user_id = ?) AND done != ?", current_user.id, current_user.id, 1) 
+	end
       
 
 

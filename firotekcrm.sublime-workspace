@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"dim",
+				"distance_of_time_in_words_to_now"
+			],
+			[
+				"fad",
+				"fadeOut"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"input",
+				"input"
+			],
+			[
 				"compan",
 				"company"
 			],
@@ -78,10 +94,6 @@
 			[
 				"ex",
 				"executed_at"
-			],
-			[
-				"input",
-				"input_html"
 			],
 			[
 				"inpu",
@@ -459,9 +471,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 76.0,
 		"selected_items":
 		[
+			[
+				"stejs",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"time",
+				"Task Timer: Status"
+			],
 			[
 				"pi",
 				"Color picker"
@@ -743,7 +763,7 @@
 				"Set Syntax: PHP"
 			]
 		],
-		"width": 588.0
+		"width": 561.0
 	},
 	"console":
 	{
@@ -760,13 +780,36 @@
 	},
 	"file_history":
 	[
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/tasks.css.scss",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/tasks.js.coffee",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/Gemfile",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/tasks_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/application.js",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/task.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_form.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514094158_change_done_default_value_in_tasks.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20121123150205_change_cap_field_in_companies.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_form.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/new.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/report.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/edit.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/_form.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/client.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/Gemfile",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/scaffolds.css.scss",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514080205_change_type_description_in_tasks.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514081356_add_owner_to_task.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.xls.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
@@ -864,30 +907,7 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/assignments.yml",
 		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/categories.yml",
 		"/Users/dave/Desktop/categories.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/seeds.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121122164740_fix_clients_coloumn_name.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130110210111_fix_role_coloumn_name.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/Gemfile.lock",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130110205755_raname_type_in_role.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/models/assignment.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121123150205_change_cap_field_in_companies.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/clients.js.coffee",
-		"/Users/dave/Desktop/phpinfo.php",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/application.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_modal_client_details.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/models/companies_relationship.rb",
-		"/Users/dave/Sites/Panadvertising/redirect_301/.htaccess",
-		"/Users/dave/Sites/RoR/FirotekCRM/doc/README_FOR_APP",
-		"/Users/dave/Sites/RoR/FirotekCRM/test/functional/companies_controller_test.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/costants.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121127135851_add_phone_and_mobile_and_fax_and_website_to_company.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/mime_types.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/environments/development.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20121205154944_devise_create_users.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/controllers/notes_controller.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/bootstrap.js.coffee",
-		"/Users/dave/Sites/RoR/FirotekCRM/config.ru",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/nested_form_for_note.html.erb"
+		"/Users/dave/Sites/RoR/FirotekCRM/db/seeds.rb"
 	],
 	"find":
 	{
@@ -895,7 +915,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 102.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<project>"
@@ -906,6 +926,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"link_to",
+			"Expense",
+			"h2",
+			"font",
+			"even",
 			"full_name",
 			"client_id",
 			"blank",
@@ -1028,12 +1053,7 @@
 			"Company",
 			"city",
 			"ity",
-			"companies",
-			"client",
-			"clent",
-			"company",
-			"mobile",
-			"dashboard"
+			"companies"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1112,6 +1132,94 @@
 		"selected_items":
 		[
 			[
+				"task",
+				"app/assets/stylesheets/tasks.css.scss"
+			],
+			[
+				"tasksjs",
+				"app/assets/javascripts/tasks.js.coffee"
+			],
+			[
+				"taskcont",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"taskjs",
+				"app/assets/javascripts/tasks.js.coffee"
+			],
+			[
+				"inde",
+				"app/views/companies/index.html.erb"
+			],
+			[
+				"taskcss",
+				"app/assets/stylesheets/tasks.css.scss"
+			],
+			[
+				"chang",
+				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
+			],
+			[
+				"add",
+				"db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb"
+			],
+			[
+				"changedef",
+				"db/migrate/20130514094158_change_done_default_value_in_tasks.rb"
+			],
+			[
+				"taskcon",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"report",
+				"app/controllers/reports_controller.rb"
+			],
+			[
+				"new",
+				"app/views/tasks/new.html.erb"
+			],
+			[
+				"_form",
+				"app/views/clients/_form.html.erb"
+			],
+			[
+				"client",
+				"app/models/client.rb"
+			],
+			[
+				"us",
+				"app/models/user.rb"
+			],
+			[
+				"appl",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"add_own",
+				"db/migrate/20130514081356_add_owner_to_task.rb"
+			],
+			[
+				"chage_t",
+				"db/migrate/20130514080205_change_type_description_in_tasks.rb"
+			],
+			[
 				"gem",
 				"Gemfile"
 			],
@@ -1172,10 +1280,6 @@
 				"app/controllers/clients_controller.rb"
 			],
 			[
-				"inde",
-				"app/views/company/index.html.erb"
-			],
-			[
 				"applica.js",
 				"app/assets/javascripts/application.js"
 			],
@@ -1212,10 +1316,6 @@
 				"app/controllers/application_controller.rb"
 			],
 			[
-				"route",
-				"config/routes.rb"
-			],
-			[
 				"applica",
 				"app/controllers/application_controller.rb"
 			],
@@ -1236,20 +1336,12 @@
 				"app/models/ability.rb"
 			],
 			[
-				"appl",
-				"app/controllers/application_controller.rb"
-			],
-			[
 				"abilit",
 				"app/models/ability.rb"
 			],
 			[
 				"report_contr",
 				"app/controllers/reports_controller.rb"
-			],
-			[
-				"report",
-				"app/models/report.rb"
 			],
 			[
 				"_report",
@@ -1274,10 +1366,6 @@
 			[
 				"report_",
 				"app/controllers/reports_controller.rb"
-			],
-			[
-				"_form",
-				"app/views/companies/_form.html.erb"
 			],
 			[
 				"indx",
@@ -1336,10 +1424,6 @@
 				"app/assets/javascripts/application.js"
 			],
 			[
-				"new",
-				"app/views/categories/new.html.erb"
-			],
-			[
 				"cl",
 				"app/models/client.rb"
 			],
@@ -1392,10 +1476,6 @@
 				"db/migrate/20130114104737_add_cliend_id_to_users.rb"
 			],
 			[
-				"client",
-				"app/models/client.rb"
-			],
-			[
 				"client_con",
 				"app/controllers/clients_controller.rb"
 			],
@@ -1414,10 +1494,6 @@
 			[
 				"todo",
 				"progress_giornaliero_firotek.TODO"
-			],
-			[
-				"appli",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"view",
@@ -1566,62 +1642,6 @@
 			[
 				"company",
 				"app/models/company.rb"
-			],
-			[
-				"box",
-				"app/views/struttura-box.html"
-			],
-			[
-				"edi",
-				"app/views/companies/edit.html.erb"
-			],
-			[
-				"ap",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"addla",
-				"db/migrate/20121128161648_add_latitude_and_longitude_to_company.rb"
-			],
-			[
-				"_fot",
-				"app/views/clients/_form.html.erb"
-			],
-			[
-				"override",
-				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
-			],
-			[
-				"addema",
-				"db/migrate/20121127170113_add_email_to_company.rb"
-			],
-			[
-				"add",
-				"db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb"
-			],
-			[
-				"migra",
-				"db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb"
-			],
-			[
-				"migrat",
-				"db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb"
-			],
-			[
-				"edit",
-				"app/views/companies/edit.html.erb"
-			],
-			[
-				"indext",
-				"app/views/categories/index.html.erb"
-			],
-			[
-				"local",
-				"config/locales/it.yml"
-			],
-			[
-				"m",
-				"db/migrate/20121123150205_change_cap_field_in_companies.rb"
 			]
 		],
 		"width": 0.0
@@ -1638,6 +1658,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 300.0,
+	"side_bar_width": 254.0,
 	"status_bar_visible": true
 }

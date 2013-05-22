@@ -2,8 +2,9 @@ class User < ActiveRecord::Base
 
   has_many :assignments
   has_many :roles, :through => :assignments
-
   has_many :client
+  has_many :owners, :class_name => "Task", :foreign_key => :owner_id
+  has_many :assigneds, :class_name => "Task", :foreign_key => :user_id
 
   has_many :user_company_assignments
   has_many :companies, :through => :user_company_assignments

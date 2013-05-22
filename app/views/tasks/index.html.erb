@@ -1,0 +1,53 @@
+<%- model_class = Task -%>
+<div class="box">
+<div class="box-header">
+  <h2>
+      <i class="icon-ok"></i>
+      <span class="break"></span>
+
+    <%=t '.title', :default => model_class.model_name.human.pluralize %>
+  </h2>
+</div>
+
+
+
+<div class="box-content">
+<!-- TASK ASSEGNTI -->
+<div id="assigned_tasks">
+    <%= render :partial => 'assigned_tasks' %>
+</div>
+<!-- /TASK ASSEGNTI -->
+
+<hr>
+
+<!-- TASK DELEGATI -->
+<div id="created_tasks">
+  <%= render :partial => 'created_tasks' %>
+</div>
+<!-- /TASK DELEGATI -->
+
+<hr>
+
+<!-- TASK PERSONALI -->
+<div id="personal_tasks">
+  <%= render :partial => 'personal_tasks' %>
+</div>
+<!-- /TASK PERSONALI -->
+
+<hr>
+
+<!-- /TASK FATTI -->
+<div id="done_tasks">
+  <%= render :partial => 'done_tasks' %>
+</div>
+<!-- /TASK FATTI -->
+
+
+</div>
+</div>
+
+
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_task_path,
+            :class => 'btn btn-primary' %>

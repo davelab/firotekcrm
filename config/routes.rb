@@ -1,4 +1,9 @@
 FirotekCRM::Application.routes.draw do
+
+  post ':controller/:action'
+
+  resources :tasks
+
   get "dashboard/index"
 
   resources :reports
