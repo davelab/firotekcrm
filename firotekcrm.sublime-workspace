@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"fa",
+				"fadeIn"
+			],
+			[
+				"line",
+				"line-through"
+			],
+			[
+				"lin",
+				"line-edge"
+			],
+			[
+				"done_",
+				"done_tasks"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
 				"dim",
 				"distance_of_time_in_words_to_now"
 			],
@@ -192,10 +212,6 @@
 				"background"
 			],
 			[
-				"create",
-				"create_table	create_table"
-			],
-			[
 				"asso",
 				"association"
 			],
@@ -338,10 +354,6 @@
 			[
 				"up",
 				"uppercase"
-			],
-			[
-				"line",
-				"line-height"
 			],
 			[
 				"cla",
@@ -780,17 +792,32 @@
 	},
 	"file_history":
 	[
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/tasks.css.scss",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/tasks.js.coffee",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/tasks_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_personal_tasks.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_created_tasks.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_assigned_tasks.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/log/development.log",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environments/development.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/application.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/user_mailer/new_task_assigned.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/mailers/user_mailer.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/tasks.js.coffee",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_done_tasks.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/tasks.css.scss",
+		"/Volumes/Data/Sites/Moze/postapronta-lg/functions.php",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/initializers/devise.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/notes/create.js.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_done_task.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/application.js",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/task.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_form.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514094158_change_done_default_value_in_tasks.rb",
@@ -807,13 +834,11 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/scaffolds.css.scss",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514080205_change_type_description_in_tasks.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514081356_add_owner_to_task.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.xls.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/schema.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/initializers/mime_types.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/.gitignore",
@@ -894,20 +919,7 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/helpers/companies_helper.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.js.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO",
-		"/Users/dave/Library/Caches/Cleanup At Startup/Transmit/EC07E285-7A80-4C4E-A6B5-31BCF9F24E84/attiva_pec.php",
-		"/Users/dave/Sites/RoR/FirotekCRM/.gitignore",
-		"/Users/dave/Desktop/database_online_firotek.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/custom.css.less",
-		"/Users/dave/Desktop/old_bootstrap_and_overrides.css.less",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/custom.less",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_modalclientdetails.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/_client_details.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130117103520_add_additional_fields_to_clients.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/assignments.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/test/fixtures/categories.yml",
-		"/Users/dave/Desktop/categories.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/seeds.rb"
+		"/Users/dave/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO"
 	],
 	"find":
 	{
@@ -926,6 +938,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"html",
+			"p_",
+			"d_",
+			"c_",
+			"created",
 			"link_to",
 			"Expense",
 			"h2",
@@ -1048,12 +1065,7 @@
 			"companies_relationship",
 			"client",
 			"hi",
-			"through",
-			"span4",
-			"Company",
-			"city",
-			"ity",
-			"companies"
+			"through"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1132,6 +1144,38 @@
 		"selected_items":
 		[
 			[
+				"log",
+				"log/development.log"
+			],
+			[
+				"tascon",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/clients/index.html.erb"
+			],
+			[
+				"develop",
+				"log/development.log"
+			],
+			[
+				"task.js",
+				"app/assets/javascripts/tasks.js.coffee"
+			],
+			[
+				"taskcss",
+				"app/assets/stylesheets/tasks.css.scss"
+			],
+			[
+				"tasks_con",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"applicah",
+				"app/views/layouts/application.html.erb"
+			],
+			[
 				"task",
 				"app/assets/stylesheets/tasks.css.scss"
 			],
@@ -1162,14 +1206,6 @@
 			[
 				"taskjs",
 				"app/assets/javascripts/tasks.js.coffee"
-			],
-			[
-				"inde",
-				"app/views/companies/index.html.erb"
-			],
-			[
-				"taskcss",
-				"app/assets/stylesheets/tasks.css.scss"
 			],
 			[
 				"chang",
@@ -1618,30 +1654,6 @@
 			[
 				"note",
 				"app/controllers/notes_controller.rb"
-			],
-			[
-				"confi",
-				"config.ru"
-			],
-			[
-				"creajs",
-				"app/views/notes/create.js.erb"
-			],
-			[
-				"applicatijs",
-				"app/assets/javascripts/application.js"
-			],
-			[
-				"_",
-				"app/views/companies/_note_fields.html.erb"
-			],
-			[
-				"note.",
-				"app/models/note.rb"
-			],
-			[
-				"company",
-				"app/models/company.rb"
 			]
 		],
 		"width": 0.0
@@ -1658,6 +1670,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 254.0,
+	"side_bar_width": 238.0,
 	"status_bar_visible": true
 }

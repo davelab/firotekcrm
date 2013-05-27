@@ -1,4 +1,11 @@
 <%- model_class = Task -%>
+
+
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_task_path,
+            :class => 'btn btn-primary' %>
+
 <div class="box">
 <div class="box-header">
   <h2>
@@ -11,7 +18,18 @@
 
 
 
+
+
 <div class="box-content">
+
+  <!-- TASK PERSONALI -->
+  <div id="personal_tasks">
+    <%= render :partial => 'personal_tasks' %>
+  </div>
+  <!-- /TASK PERSONALI -->
+
+  <hr>
+
 <!-- TASK ASSEGNTI -->
 <div id="assigned_tasks">
     <%= render :partial => 'assigned_tasks' %>
@@ -28,13 +46,8 @@
 
 <hr>
 
-<!-- TASK PERSONALI -->
-<div id="personal_tasks">
-  <%= render :partial => 'personal_tasks' %>
-</div>
-<!-- /TASK PERSONALI -->
 
-<hr>
+
 
 <!-- /TASK FATTI -->
 <div id="done_tasks">
@@ -47,7 +60,3 @@
 </div>
 
 
-
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_task_path,
-            :class => 'btn btn-primary' %>

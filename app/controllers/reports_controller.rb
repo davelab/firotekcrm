@@ -53,10 +53,10 @@ class ReportsController < ApplicationController
       if @report.save
 
         if (params[:commit] == 'Salva e Nuovo') 
-        format.html { redirect_to new_report_path, notice: 'Report creato con successo.' }
+        format.html { redirect_to new_report_path, notice: "Report creato con successo. #{view_context.link_to('crea nuovo task', new_task_path)}".html_safe }
         format.json { render json: new_report_path, status: :created, location: @report }
         else
-          format.html { redirect_to reports_path, notice: 'Report creato con successo.' }
+        format.html { redirect_to reports_path,  notice: "Report creato con successo. #{view_context.link_to('crea nuovo task', new_task_path)}".html_safe  }
         format.json { render json: @report, status: :created, location: @report }
         end
       else
