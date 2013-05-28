@@ -40,11 +40,11 @@ FirotekCRM::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
+    :address              => "mail.firotek.it",
     :port                 => 587,
-    :domain               => 'gmail.com',
-    :user_name            => 'dado19866@gmail.com',
-    :password             => 'Am3l13@G7',
+    :domain               => 'firotek.it',
+    :user_name            => 'commerciale@firotek.it',
+    :password             => 'Messina.12343',
     :authentication => :login,
     :enable_starttls_auto => true 
     }
