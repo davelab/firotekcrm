@@ -69,9 +69,7 @@ jQuery(document).ready(function($) {
   //popolazione dell'attributo rel con i client appartenti alla società selezionata nel dropdown
   $("#report_company_id").subSelectWithAjax();
 
-  //inizializzazione del plugin select2 per gli elementi di dropdown e select
-  $('select[multiple="multiple"]').select2({ width: "element" });
-	$('select').select2({  width: "element"  });
+
 
   //configurazione dei datatable per filtraggio e paginazione
 	$('.datatable').dataTable({
@@ -100,6 +98,10 @@ jQuery(document).ready(function($) {
     	},
 
 	});
+
+    //inizializzazione del plugin select2 per gli elementi di dropdown e select
+    $('select[multiple="multiple"]').select2({ width: "element" });
+    $('select').select2({  width: "element"  });
 
   
 
