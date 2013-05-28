@@ -33,19 +33,19 @@ FirotekCRM::Application.configure do
   config.assets.compress = false
 
   # Expands the lines which load the assets
-  config.assets.debug = true
+  config.assets.debug = false
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => "mail.firotek.it",
+    :address              => "192.168.0.133",
     :port                 => 25,
-    :domain               => 'firotek.it',
+    :domain               => '',
     :user_name            => 'commerciale@firotek.it',
     :password             => 'Messina.12343',
     :authentication => :login,
-    :enable_starttls_auto => true 
+    :enable_starttls_auto => false 
     }
 end
