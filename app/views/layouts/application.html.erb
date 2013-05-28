@@ -74,6 +74,8 @@
     </div>
   </div>
 <div class="container">
+  <%= "Environment: #{RAILS_ENV}" %>
+  
 		<% flash.each do |name, msg| %>
 			<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
 			    <a class="close" data-dismiss="alert">×</a>
