@@ -45,7 +45,7 @@ FirotekCRM::Application.configure do
     :domain               => 'firotek.it',
     :user_name            => 'commerciale@firotek.it',
     :password             => 'Messina.12343',
-    :authentication => :plain,
+    :authentication => :login,
     :enable_starttls_auto => false
     }
 end
