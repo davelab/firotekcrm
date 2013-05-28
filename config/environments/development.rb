@@ -42,10 +42,10 @@ FirotekCRM::Application.configure do
 
   config.action_mailer.smtp_settings = {
     :address              => "192.168.0.133",
-    :port                 => 25,
+    :port                 => 587,
     :user_name            => 'commerciale@firotek.it',
     :password             => 'Messina.12343',
-    :authentication => :login,
+    :authentication => :plain,
     :enable_starttls_auto => false
     }
 end
