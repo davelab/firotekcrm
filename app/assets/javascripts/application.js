@@ -99,11 +99,6 @@ jQuery(document).ready(function($) {
 
 	});
 
-    //inizializzazione del plugin select2 per gli elementi di dropdown e select
-    $('select[multiple="multiple"]').select2({ width: "element" });
-    $('select').select2({  width: "element"  });
-
-  
 
 
 });
