@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  protocol_number: MyString
+  user_id: 1
+  billed_company: 1
+  operative_company: 
+  offered_import: 1.5
+  real_import: 1.5
+  status: MyString
+  shipment_mode: MyString
+
+two:
+  protocol_number: MyString
+  user_id: 1
+  billed_company: 1
+  operative_company: 
+  offered_import: 1.5
+  real_import: 1.5
+  status: MyString
+  shipment_mode: MyString

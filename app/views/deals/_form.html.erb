@@ -1,0 +1,16 @@
+<%= simple_form_for @deal, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :protocol_number %>
+  <%= f.input :user_id %>
+  <%= f.input :billed_company %>
+  <%= f.input :operative_company %>
+  <%= f.input :description %>
+  <%= f.input :offered_import %>
+  <%= f.input :real_import %>
+  <%= f.input :status %>
+  <%= f.input :shipment_mode %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                deals_path, :class => 'btn' %>
+  </div>
+<% end %>
