@@ -1,36 +1,5 @@
 <%- model_class = Client -%>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-    //configurazione dei datatable per filtraggio e paginazione
-    $('#table-clients').dataTable({
-        "aaSorting": [[ 2, "asc" ]],
-        "sDom": "<'row-fluid'<'span2'l><'span4'T><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
 
-            
-  "oTableTools": {
-        "aButtons": [
-          "copy",
-          "print",
-          {
-            "sExtends":    "collection",
-            "sButtonText": 'Save <span class="caret" />',
-            "aButtons":    [ "csv", "xls", "pdf" ]
-          }
-        ]
-      },
-        "sPaginationType": "bootstrap",
-        "oLanguage": {
-            "sSearch": "<i class='icon-search'></i>",
-            "sZeroRecords": "Nessun elemento disponibile",
-            "sLengthMenu": "Mostra _MENU_ righe",
-            "sPrevious": "Precedente",
-            "sNext": "Successivo",
-             "sInfo": "da <b>_START_</b> a <b>_END_</b> totali: <span class='label label-info'>_TOTAL_</span>",
-        },
-
-    });// Stuff to do as soon as the DOM is ready;
-});
-</script>
 
 
 <%= link_to t('.new', :default => t("helpers.links.nuovo")),
@@ -51,7 +20,7 @@ jQuery(document).ready(function($) {
   </h2>
 </div>
 <div class="box-content">
-<table class="table table-striped table-bordered" id="table-clients">
+<table class="table table-striped table-bordered datatable" id="table-clients">
   <thead>
     <tr>
       <th>Nome</th>  
