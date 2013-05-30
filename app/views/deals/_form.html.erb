@@ -1,13 +1,15 @@
 <%= simple_form_for @deal, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :protocol_number %>
-  <%= f.input :user_id %>
-  <%= f.input :billed_company %>
-  <%= f.input :operative_company %>
+
+  <%= f.input :protocol_number, :as => :hidden,  :input_html => { :value =>  @pn }  %>
+  <%= f.input :user_id, :as => :select, :label => "Venditore", :collection => User.sellers , :value_method => :id, :label_method => :username  %>
+  <%= f.input :billed_company, :as => :select, :label => "Società intestataria", :collection => Company.all, :value_method => :id, :label_method => :name %>
+  <%= f.input :operative_company, :as => :select, :label => "Società presso cui", :collection => Company.all, :value_method => :id, :label_method => :name %>
   <%= f.input :description %>
   <%= f.input :offered_import %>
-  <%= f.input :real_import %>
-  <%= f.input :status %>
-  <%= f.input :shipment_mode %>
+
+  <%= f.input :real_import if @deal.status == "Won" %>
+  <%= f.input :status, :as => :select, :collection => deal_status, :default => 1  %>
+  <%= f.input :shipment_mode, :as => :select, :collection => shipment_mode, :default => 1  %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

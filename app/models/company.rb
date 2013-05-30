@@ -44,6 +44,9 @@ class Company < ActiveRecord::Base
 		has_many :notes
 		has_many :reports, :dependent => :destroy
 
+		has_many :billeds, :class_name => "Deal", :foreign_key => :billed_company
+		has_many :operatives, :class_name => "Deal", :foreign_key => :operative_company
+
 		belongs_to :category
 	#END Relations
 

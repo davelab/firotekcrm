@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
   has_many :assignments
   has_many :roles, :through => :assignments
   has_many :client
+
+  has_many :deals
+
   has_many :owners, :class_name => "Task", :foreign_key => :owner_id
   has_many :assigneds, :class_name => "Task", :foreign_key => :user_id
 
@@ -29,8 +32,16 @@ def role_names
   roles.map{|r| r.slug.downcase }.join(', ')
 end
 
+
 #Restituisce tutti gli utenti non associati a un client
-scope :missing_user,
-    includes(:client).where("clients.id is null")
+scope :missing_user, includes(:client).where("clients.id is null")
+
+scope :sellers, includes(:roles).where( :roles => { :id => [3,4] } )
+
 end
+
+
+
+
+
 
