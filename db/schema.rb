@@ -11,11 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20130528165104) do
-=======
+
 ActiveRecord::Schema.define(:version => 20130530120909) do
->>>>>>> deals
+
 
   create_table "Roles", :force => true do |t|
     t.string   "name"
@@ -90,15 +88,7 @@ ActiveRecord::Schema.define(:version => 20130530120909) do
   create_table "deals", :force => true do |t|
     t.string   "protocol_number"
     t.integer  "user_id"
-<<<<<<< HEAD
-    t.integer  "legal_company"
-    t.integer  "operative_company"
-    t.string   "description"
-    t.string   "shipment"
-    t.float    "amount_offered"
-    t.float    "amount_accepted"
-    t.string   "status"
-=======
+
     t.integer  "billed_company"
     t.integer  "operative_company"
     t.text     "description"
@@ -106,7 +96,7 @@ ActiveRecord::Schema.define(:version => 20130530120909) do
     t.float    "real_import"
     t.string   "status"
     t.string   "shipment_mode"
->>>>>>> deals
+
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end

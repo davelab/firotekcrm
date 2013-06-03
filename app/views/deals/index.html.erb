@@ -1,23 +1,5 @@
 <%- model_class = Deal -%>
-<<<<<<< HEAD
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
-</div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:protocol_number) %></th>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:legal_company) %></th>
-      <th><%= model_class.human_attribute_name(:operative_company) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th><%= model_class.human_attribute_name(:shipment) %></th>
-      <th><%= model_class.human_attribute_name(:amount_offered) %></th>
-      <th><%= model_class.human_attribute_name(:amount_accepted) %></th>
-      <th><%= model_class.human_attribute_name(:status) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-=======
+
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_deal_path,
@@ -44,26 +26,14 @@
       <th>Creata il</th>
       <th>Offerta €</th>
       <th>Venduta €</th>
->>>>>>> deals
+
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @deals.each do |deal| %>
       <tr>
-<<<<<<< HEAD
-        <td><%= link_to deal.id, deal_path(deal) %></td>
-        <td><%= deal.protocol_number %></td>
-        <td><%= deal.user_id %></td>
-        <td><%= deal.legal_company %></td>
-        <td><%= deal.operative_company %></td>
-        <td><%= deal.description %></td>
-        <td><%= deal.shipment %></td>
-        <td><%= deal.amount_offered %></td>
-        <td><%= deal.amount_accepted %></td>
-        <td><%= deal.status %></td>
-        <td><%=l deal.created_at %></td>
-=======
+
         
         <td><%= link_to deal.protocol_number, deal_path(deal) %></td>
         <td><%= deal.user.username %></td>
@@ -74,7 +44,7 @@
         <td><%=l deal.created_at %></td>
         <td><%= number_to_currency(deal.offered_import) %></td>
         <td><%= number_to_currency(deal.real_import) %></td>
->>>>>>> deals
+
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_deal_path(deal), :class => 'btn btn-mini' %>
@@ -88,13 +58,7 @@
     <% end %>
   </tbody>
 </table>
-<<<<<<< HEAD
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_deal_path,
-            :class => 'btn btn-primary' %>
-=======
 </div>
 
 
->>>>>>> deals
