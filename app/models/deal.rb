@@ -5,6 +5,6 @@ class Deal < ActiveRecord::Base
   belongs_to :billed, :class_name => 'Company', :foreign_key => :billed_company
   belongs_to :operative, :class_name => 'Company', :foreign_key => :operative_company
 
-  validates :billed_company, :offered_import, :operative_company, :user_id, presence: {message: "campo obbligatorio"}
+  validates :protocol_number, :billed_company, :offered_import, :operative_company, :user_id, presence: {message: "campo obbligatorio"}
 
 end

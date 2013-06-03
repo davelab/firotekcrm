@@ -90,7 +90,7 @@ class DealsController < ApplicationController
 
 
   def protocol_number
-     last_deal = Deal.first
+     last_deal = Deal.last
      year = Date.today.year.to_s.slice(2..3)
      unless last_deal
       code_number = sprintf '%02d', 1

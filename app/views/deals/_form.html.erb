@@ -1,7 +1,7 @@
 <%= simple_form_for @deal, :html => { :class => 'form-horizontal' } do |f| %>
+  <h4>Nuovo numero prot. <%= @pn %></h4>
 
-
-  <%= f.input :protocol_number, :disabled => true,  :input_html => { :value =>  @pn }  %>
+  <%= f.input :protocol_number, :as => :hidden,  :input_html => { :value =>  @pn }  %>
   <%= f.input :user_id, :as => :select, :label => "Venditore", :collection => User.sellers , :value_method => :id, :label_method => :username  %>
   <%= f.input :billed_company, :as => :select, :label => "Società intestataria", :collection => Company.all, :value_method => :id, :label_method => :name %>
   <%= f.input :operative_company, :as => :select, :label => "Società presso cui", :collection => Company.all, :value_method => :id, :label_method => :name %>
