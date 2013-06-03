@@ -1,0 +1,41 @@
+<table class="table table-striped table-bordered datatable">
+  <thead>
+    <tr>
+    
+      <th>N. prot.</th>
+      <th>Venditore</th>
+      <th>Fattura a</th>
+      <th>Operatività</th>
+      <th>Consegna</th>
+      <th>Status</th>
+      <th>Creata il</th>
+      <th>Offerta €</th>
+      <th>Venduta €</th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @deals.each do |deal| %>
+      <tr>
+        
+        <td><%= link_to deal.protocol_number, deal_path(deal) %></td>
+        <td><%= deal.user.username %></td>
+        <td><%= deal.billed.name %></td>
+        <td><%= deal.operative.name %></td>
+        <td><%= deal.shipment_mode %></td>
+        <td><span class="label label-<%= deal.status.downcase  %>"><%= deal.status %></span></td>
+        <td><%=l deal.created_at %></td>
+        <td><%= deal.offered_import %></td>
+        <td><%= deal.real_import %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_deal_path(deal), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      deal_path(deal),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>

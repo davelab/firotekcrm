@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"Com",
+				"Company"
+			],
+			[
+				"bille",
+				"billed_company"
+			],
+			[
+				"ope",
+				"operative_company"
+			],
+			[
+				"deal",
+				"deals_path"
+			],
+			[
+				"next_",
+				"next_year"
+			],
+			[
+				"pro",
+				"protocol_number"
+			],
+			[
+				"deals",
+				"deal_status"
+			],
+			[
+				"la",
+				"label_method"
+			],
+			[
+				"val",
+				"value_method"
+			],
+			[
+				"col",
+				"collection"
+			],
+			[
 				"fa",
 				"fadeIn"
 			],
@@ -30,10 +78,6 @@
 			[
 				"fad",
 				"fadeOut"
-			],
-			[
-				"val",
-				"value"
 			],
 			[
 				"input",
@@ -188,10 +232,6 @@
 				"show_not_blank_field"
 			],
 			[
-				"la",
-				"label"
-			],
-			[
 				"curre",
 				"current_user"
 			],
@@ -206,10 +246,6 @@
 			[
 				"associ",
 				"associated_company_id"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"asso",
@@ -531,7 +567,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 76.0,
+		"height": 32.0,
 		"selected_items":
 		[
 			[
@@ -823,7 +859,7 @@
 				"Set Syntax: PHP"
 			]
 		],
-		"width": 561.0
+		"width": 570.0
 	},
 	"console":
 	{
@@ -840,21 +876,58 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environments/development.rb",
+=======
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/_form.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/edit.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_form.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/database.yml",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/company.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/task.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/companies_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/_deal_pagination.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/deal.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_report.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/_deal.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/application.js",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/report.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
+>>>>>>> deals
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_assigned_tasks.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_form.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/tasks_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/new.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/new.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/new.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130530120909_create_deals.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/Gemfile",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environments/development.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/mailers/user_mailer.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_personal_tasks.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_created_tasks.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_assigned_tasks.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/log/development.log",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/application.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/user_mailer/new_task_assigned.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/mailers/user_mailer.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/tasks.js.coffee",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_done_tasks.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/tasks.css.scss",
@@ -862,6 +935,7 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/initializers/devise.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/notes/create.js.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/_done_task.html.erb",
+<<<<<<< HEAD
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
@@ -875,16 +949,18 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_form.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/new.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/report.rb",
+=======
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514094158_change_done_default_value_in_tasks.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20121123150205_change_cap_field_in_companies.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20121127095613_add_address_and_cap_and_city_to_client.rb",
+>>>>>>> deals
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/edit.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/_form.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/client.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/Gemfile",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/scaffolds.css.scss",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514080205_change_type_description_in_tasks.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130514081356_add_owner_to_task.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.xls.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/schema.rb",
@@ -951,27 +1027,11 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/models/user_company_assignment.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130124153412_create_user_company_assignments.rb",
 		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130124152856_create_users_companies_assignments.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130123102841_add_user_id_to_companies.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_form.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/locales/devise.it.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/registrations/new.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/_links.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/new.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/companies/edit.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/javascripts/companies.js.coffee",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/devise/registrations/edit.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/initializers/devise.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114085658_remove_user_id_from_clients.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/_client_details.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130114104737_add_cliend_id_to_users.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/helpers/companies_helper.rb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.js.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/clients/show.html.erb",
-		"/Users/dave/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO"
+		"/Users/dave/Sites/RoR/FirotekCRM/db/migrate/20130123102841_add_user_id_to_companies.rb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -986,6 +1046,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
+=======
+			"pagination",
+			"important",
+			"Deal",
+			"hidden",
+>>>>>>> deals
 			"assets",
 			"rubyconfig.assets.debug =",
 			"rubyconfig.assets.debug = false",
@@ -1109,11 +1176,15 @@
 			"        <Cell><Data ss:Type=\"String\"><%= product.name %></Data></Cell>\n",
 			"format",
 			"row",
+<<<<<<< HEAD
 			"category",
 			"categories",
 			"%>\n",
 			"Categoria",
 			"%>"
+=======
+			"category"
+>>>>>>> deals
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1910,6 +1981,102 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
+				"applhtml",
+				"app/views/layouts/application.html.erb"
+=======
+				"_form",
+				"app/views/deals/_form.html.erb"
+			],
+			[
+				"_for",
+				"app/views/reports/_form.html.erb"
+			],
+			[
+				"deals",
+				"app/controllers/deals_controller.rb"
+			],
+			[
+				"abil",
+				"app/models/ability.rb"
+			],
+			[
+				"companiecon",
+				"app/controllers/companies_controller.rb"
+			],
+			[
+				"datay",
+				"config/database.yml"
+			],
+			[
+				"over",
+				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
+			],
+			[
+				"ind",
+				"app/views/deals/index.html.erb"
+			],
+			[
+				"task.r",
+				"app/models/task.rb"
+			],
+			[
+				"_",
+				"app/views/tasks/_assigned_tasks.html.erb"
+			],
+			[
+				"inde",
+				"app/views/tasks/index.html.erb"
+			],
+			[
+				"comp",
+				"app/models/company.rb"
+			],
+			[
+				"dea",
+				"app/models/deal.rb"
+			],
+			[
+				"report",
+				"app/models/report.rb"
+			],
+			[
+				"appl",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"taskcon",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"dealrb",
+				"app/models/deal.rb"
+			],
+			[
+				"contrde",
+				"app/controllers/deals_controller.rb"
+			],
+			[
+				"hel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"_fom",
+				"app/views/deals/_form.html.erb"
+			],
+			[
+				"new",
+				"app/views/tasks/new.html.erb"
+			],
+			[
+				"_f",
+				"app/views/deals/_form.html.erb"
+			],
+			[
 				"applhtml",
 				"app/views/layouts/application.html.erb"
 			],
@@ -1926,6 +2093,36 @@
 				"app/assets/javascripts/application.js"
 			],
 			[
+				"index",
+				"app/views/companies/index.html.erb"
+			],
+			[
+				"appli.ht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"repco",
+				"app/controllers/reports_controller.rb"
+			],
+			[
+				"log",
+				"log/development.log"
+>>>>>>> deals
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+<<<<<<< HEAD
 				"inde",
 				"app/views/clients/index.html.erb"
 			],
@@ -1950,6 +2147,8 @@
 				"app/controllers/tasks_controller.rb"
 			],
 			[
+=======
+>>>>>>> deals
 				"develop",
 				"log/development.log"
 			],
@@ -2010,32 +2209,12 @@
 				"db/migrate/20130514094158_change_done_default_value_in_tasks.rb"
 			],
 			[
-				"taskcon",
-				"app/controllers/tasks_controller.rb"
-			],
-			[
-				"report",
-				"app/controllers/reports_controller.rb"
-			],
-			[
-				"new",
-				"app/views/tasks/new.html.erb"
-			],
-			[
-				"_form",
-				"app/views/clients/_form.html.erb"
-			],
-			[
 				"client",
 				"app/models/client.rb"
 			],
 			[
 				"us",
 				"app/models/user.rb"
-			],
-			[
-				"appl",
-				"app/assets/javascripts/application.js"
 			],
 			[
 				"add_own",
@@ -2074,10 +2253,6 @@
 				"app/controllers/clients_controller.rb"
 			],
 			[
-				"ind",
-				"app/views/clients/index.html.erb"
-			],
-			[
 				"mi",
 				"config/initializers/mime_types.rb"
 			],
@@ -2106,28 +2281,12 @@
 				"app/controllers/dashboard_controller.rb"
 			],
 			[
-				"over",
-				"app/assets/stylesheets/bootstrap_and_overrides.css.less"
-			],
-			[
-				"abil",
-				"app/models/ability.rb"
-			],
-			[
 				"dash",
 				"app/controllers/dashboard_controller.rb"
 			],
 			[
 				"rou",
 				"config/routes.rb"
-			],
-			[
-				"comp",
-				"app/models/company.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"appliccont",
@@ -2200,10 +2359,6 @@
 			[
 				"report_cont",
 				"app/controllers/reports_controller.rb"
-			],
-			[
-				"_for",
-				"app/views/reports/_form.html.erb"
 			],
 			[
 				"ro",
@@ -2374,12 +2529,9 @@
 				"test/functional/companies_controller_test.rb"
 			],
 			[
-				"hel",
-				"app/helpers/application_helper.rb"
-			],
-			[
 				"sty",
 				"app/assets/stylesheets/application.css"
+<<<<<<< HEAD
 			],
 			[
 				"shoe",
@@ -2420,6 +2572,8 @@
 			[
 				"_not",
 				"app/views/notes/_note.html.erb"
+=======
+>>>>>>> deals
 			]
 		],
 		"width": 0.0

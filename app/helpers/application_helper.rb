@@ -19,6 +19,13 @@ module ApplicationHelper
 			regioni = [ "Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana", "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"] 
 	end
 
+	def deal_status
+			deal_status = [ "Pending", "Won", "Lost" ] 
+	end
+	def shipment_mode
+			shipment_mode = [ "email", "A mano", "Posta" ] 
+	end
+
 	def owned(model = controller_name.classify)
     	current_user.id == model.user_id
 	end

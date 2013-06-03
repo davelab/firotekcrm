@@ -3,6 +3,7 @@
 one:
   protocol_number: MyString
   user_id: 1
+<<<<<<< HEAD
   legal_company: 1
   operative_company: 1
   description: MyString
@@ -10,10 +11,19 @@ one:
   amount_offered: 1.5
   amount_accepted: 1.5
   status: MyString
+=======
+  billed_company: 1
+  operative_company: 
+  offered_import: 1.5
+  real_import: 1.5
+  status: MyString
+  shipment_mode: MyString
+>>>>>>> deals
 
 two:
   protocol_number: MyString
   user_id: 1
+<<<<<<< HEAD
   legal_company: 1
   operative_company: 1
   description: MyString
@@ -21,3 +31,11 @@ two:
   amount_offered: 1.5
   amount_accepted: 1.5
   status: MyString
+=======
+  billed_company: 1
+  operative_company: 
+  offered_import: 1.5
+  real_import: 1.5
+  status: MyString
+  shipment_mode: MyString
+>>>>>>> deals

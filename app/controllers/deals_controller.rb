@@ -1,6 +1,10 @@
 class DealsController < ApplicationController
   # GET /deals
   # GET /deals.json
+<<<<<<< HEAD
+=======
+
+>>>>>>> deals
   def index
     @deals = Deal.all
 
@@ -25,7 +29,11 @@ class DealsController < ApplicationController
   # GET /deals/new.json
   def new
     @deal = Deal.new
+<<<<<<< HEAD
 
+=======
+    @pn = protocol_number
+>>>>>>> deals
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @deal }
@@ -41,12 +49,20 @@ class DealsController < ApplicationController
   # POST /deals.json
   def create
     @deal = Deal.new(params[:deal])
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> deals
     respond_to do |format|
       if @deal.save
         format.html { redirect_to @deal, notice: 'Deal was successfully created.' }
         format.json { render json: @deal, status: :created, location: @deal }
       else
+<<<<<<< HEAD
+=======
+        @pn = protocol_number
+>>>>>>> deals
         format.html { render action: "new" }
         format.json { render json: @deal.errors, status: :unprocessable_entity }
       end
@@ -80,4 +96,26 @@ class DealsController < ApplicationController
       format.json { head :no_content }
     end
   end
+<<<<<<< HEAD
+=======
+
+
+  def protocol_number
+     last_deal = Deal.first
+     year = Date.today.year.to_s.slice(2..3)
+     unless last_deal
+      code_number = sprintf '%02d', 1
+      pn = code_number + "/" + year 
+     else
+      pn = last_deal.protocol_number.split('/')
+      next_code = sprintf '%02d', pn[0].to_i + 1
+      next_year = year.to_i + 1 
+      if pn[1].to_s != year.to_s
+        pn =  next_code.to_s + "/" + next_year
+      else
+        pn = next_code.to_s + "/" + year.to_s
+      end
+     end
+  end
+>>>>>>> deals
 end
