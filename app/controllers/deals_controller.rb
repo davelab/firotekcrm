@@ -42,12 +42,13 @@ class DealsController < ApplicationController
   # POST /deals.json
   def create
     @deal = Deal.new(params[:deal])
-
+    
     respond_to do |format|
       if @deal.save
         format.html { redirect_to @deal, notice: 'Deal was successfully created.' }
         format.json { render json: @deal, status: :created, location: @deal }
       else
+        @pn = protocol_number
         format.html { render action: "new" }
         format.json { render json: @deal.errors, status: :unprocessable_entity }
       end

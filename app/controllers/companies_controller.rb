@@ -17,8 +17,9 @@ load_and_authorize_resource
   # GET /companies/1
   # GET /companies/1.json
   def show
-    @company = Company.includes(:category, :clients, :notes, :reports).find(params[:id])
+    @company = Company.includes(:category, :clients, :notes, :reports, :deals).find(params[:id])
     @reports = @company.reports.paginate(:page => params[:page], :per_page => 30).order(:executed_at).reverse_order
+    @deals = @company.deals.paginate(:page => params[:page], :per_page => 30).order(:created_at).reverse_order
 
     @notes = Note.new
 

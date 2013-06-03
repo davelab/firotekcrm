@@ -28,6 +28,7 @@
         <li class="<%= 'active' unless params[:page]%>"><a href="#company-details" data-toggle="tab"><h3><i class="icon-briefcase"></i></h3></a></li>
         <!-- <li><a href="#note-details" data-toggle="tab"><h3><i class="icon-pushpin"></i></h3></a></li> -->
         <li class="<%= 'active' if params[:page]%>"><a href="#reports-details" data-toggle="tab"><h3><i class="icon-file"></i></h3></a></li>
+        <li class="<%= 'active' if params[:page]%>"><a href="#deals-details" data-toggle="tab"><h3><i class="icon-money "></i></h3></a></li>
 </ul>
 
 <div id="company-tab-content" class="tab-content">
@@ -66,10 +67,6 @@
       </dl> 
     <!-- Visualizza la mappa solo se è presente l'indirizzo -->
     <%= gmaps({ "map_options" => {"auto_adjust" => true, "auto_zoom" => false, "zoom" => 15 }, "markers"  => {"data" => @mapCompany } }) if @company.address? %>
-
-
-      
-     
 
     </div>
   </div>
@@ -181,6 +178,26 @@
           <%= render :partial => 'report_pagination' %>
             <%= render @reports %> 
           <%= render :partial => 'report_pagination' %>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="deals-details" class="tab-pane <%= 'active' if params[:page]%>">
+  <div class="box span11">
+    <div class="box-header">
+      <h2>
+        <i class="icon-money"></i><span class="break"></span>
+        Deals
+      </h2>
+    </div>
+    <div class="box-content">
+      <div id="deals">
+
+          <%= render :partial => 'deal_pagination' %>
+            <%= render @deals %> 
+          <%= render :partial => 'deal_pagination' %>
           
       </div>
     </div>

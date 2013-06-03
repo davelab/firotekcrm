@@ -41,6 +41,11 @@
                 <li><%= link_to "nuova", new_task_path %></li>
               </ul>
             </li>
+            <li class="dropdown"><%= link_to link_icon("money") + " Deals", deals_path, :class => "dropdown-toggle" %>
+              <ul class="dropdown-menu">
+                <li><%= link_to "nuova", new_deal_path %></li>
+              </ul>
+            </li>
           </ul>
           <ul class="nav pull-right">
             <li class="dropdown">

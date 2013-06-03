@@ -1,28 +1,43 @@
 <%- model_class = Deal -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+<div class="box">
+
+  <div class="box-header">
+    <h2>
+      <i class="icon-money"></i><span class="break"></span>
+      Deal
+    </h2>
+  </div>
+  <div class="box-content">
+    <h4>Numero protocollo: <%= @deal.protocol_number %> <span class="label label-<%= @deal.status.downcase %>"><%= @deal.status %></span></h4> 
+
+    <p>Venditore: <strong><%= @deal.user.username %></strong></p>
+
+<table cellpadding="10">
+<tr>
+  <td>
+    <p>Fatturare a: <strong><%= link_to @deal.billed.name, company_path(@deal.billed) %></strong></p>
+  </td>
+  <td>
+    <p>Eseguire presso: <strong><%= @deal.operative.name %></strong></p>
+  </td>  
+  <td>
+    <p>inviata tramite: <strong><%= @deal.shipment_mode%></strong></p>
+  </td>
+</tr>
+</table>
+    <hr>
+<h5>Descrizione:</h5>
+<p><%= @deal.description %></p>
+
+<div class="row">
+  <div class="span4"><strong>Valore offerta:</strong> <%= number_to_currency(@deal.offered_import) %></div>
+  <% if @deal.real_import %>
+  <div class="span4"><strong>Venduta a:</strong> <span class="green"><%= number_to_currency(@deal.offered_import) %></span></div>
+  <% end %>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:protocol_number) %>:</strong></dt>
-  <dd><%= @deal.protocol_number %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
-  <dd><%= @deal.user_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:billed_company) %>:</strong></dt>
-  <dd><%= @deal.billed_company %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:operative_company) %>:</strong></dt>
-  <dd><%= @deal.operative_company %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @deal.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:offered_import) %>:</strong></dt>
-  <dd><%= @deal.offered_import %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:real_import) %>:</strong></dt>
-  <dd><%= @deal.real_import %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:status) %>:</strong></dt>
-  <dd><%= @deal.status %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:shipment_mode) %>:</strong></dt>
-  <dd><%= @deal.shipment_mode %></dd>
-</dl>
+<div id="price"></div>
+  </div>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
