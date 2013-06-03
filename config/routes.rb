@@ -1,5 +1,7 @@
 FirotekCRM::Application.routes.draw do
 
+  resources :deals
+
   post ':controller/:action'
 
   resources :tasks

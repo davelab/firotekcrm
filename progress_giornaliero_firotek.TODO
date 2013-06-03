@@ -103,6 +103,19 @@
 
 
   ToDo:
+   Deals:
+   ☐ campi da aggiungere alla creazione del nuovo scaffolding 
+       N.Protocollo :string 
+       Venditore - user_id (che è l'user che ha fatto l'offerta) :integer
+       Data (automatica di creazione del protocollo) :timestamp
+       Company (a chi è indirizzata) :integer
+       Company (lavoro presso) :integer
+       Descrizione (nota libera) :string
+       mezzo di invio (select con valori preselezionati da una costante) :string
+       Importo_offerta (In euro al netto d'iva) :integer
+       Importo_commissionato (In euro al netto d'iva) :integer
+       Status (Pending o Won, rispettivamente pending di colore arancione e Won di colore verde) :string
+
 
 Dal Prossimo Commit dal l'ultimo update del 17/01:
  ☐ bundle update
