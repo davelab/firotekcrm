@@ -37,7 +37,7 @@
         
         <td><%= link_to deal.protocol_number, deal_path(deal) %></td>
         <td><%= deal.user.username %></td>
-        <td><%= link_to deal.billed.name, company_path(deal) %></td>
+        <td><%= link_to deal.billed.name, company_path(deal.billed) %></td>
         <td><%= deal.operative.name %></td>
         <td><%= deal.shipment_mode %></td>
         <td><span class="label label-<%= deal.status.downcase  %>"><%= deal.status %></span></td>

@@ -194,10 +194,31 @@
     </div>
     <div class="box-content">
       <div id="deals">
+        <%= link_to t('.new', :default => t("helpers.links.new")),
+                    new_deal_path(:billed_company => @company.id),
+                    :class => 'btn btn-primary' %>
+                    <hr>
+        <table class="table table-striped table-bordered datatable">
+          <thead>
+            <tr>
+            
+              <th>N. prot.</th>
+              <th>Venditore</th>
+              <th>Fattura a</th>
+              <th>Operatività</th>
+              <th>Consegna</th>
+              <th>Status</th>
+              <th>Creata il</th>
+              <th>Offerta €</th>
+              <th>Venduta €</th>
+              <th>Azioni</th>
+            </tr>
+          </thead>
+          <tbody>
 
-          <%= render :partial => 'deal_pagination' %>
             <%= render @deals %> 
-          <%= render :partial => 'deal_pagination' %>
+          </tbody>
+
           
       </div>
     </div>

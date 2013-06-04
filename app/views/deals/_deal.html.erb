@@ -1,21 +1,4 @@
-<table class="table table-striped table-bordered datatable">
-  <thead>
-    <tr>
-    
-      <th>N. prot.</th>
-      <th>Venditore</th>
-      <th>Fattura a</th>
-      <th>Operatività</th>
-      <th>Consegna</th>
-      <th>Status</th>
-      <th>Creata il</th>
-      <th>Offerta €</th>
-      <th>Venduta €</th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @deals.each do |deal| %>
+
       <tr>
         
         <td><%= link_to deal.protocol_number, deal_path(deal) %></td>
@@ -37,5 +20,5 @@
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>
-    <% end %>
-  </tbody>
+
+ 

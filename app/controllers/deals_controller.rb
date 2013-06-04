@@ -37,7 +37,10 @@ class DealsController < ApplicationController
 
   # GET /deals/1/edit
   def edit
+
     @deal = Deal.find(params[:id])
+
+    @pn = @deal.protocol_number
   end
 
   # POST /deals
