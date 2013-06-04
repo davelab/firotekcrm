@@ -1,9 +1,14 @@
 class DealsController < ApplicationController
   # GET /deals
   # GET /deals.json
+  load_and_authorize_resource
 
   def index
-    @deals = Deal.all
+   if can? :view_all_deals, @user
+     @deals = Deal.all
+   else
+     @deals = Deal.where(:user_id => current_user.id)
+   end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -46,6 +51,7 @@ class DealsController < ApplicationController
   # POST /deals
   # POST /deals.json
   def create
+
     @deal = Deal.new(params[:deal])
 
     respond_to do |format|

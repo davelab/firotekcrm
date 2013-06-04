@@ -11,23 +11,23 @@ class Ability
     can :manage, :all
     can :view_all_records
     can :export_xls, :all
+
   end
 
   def supervisor
     can  :read, :all
     can :view_all_records
     cannot :export_xls, :all
-    cannot :read, Deal
-
   end
 
 
   def seller
     can :manage, :all
+    cannot [:create, :edit, :destroy], Deal
     cannot :destroy, :all
     cannot :view_all_records
+    cannot :view_all_deals
     cannot :export_xls, :all
-    cannot :read, Deal
     cannot :show, Company do |company|
       !company.user_ids.include? @user.id
     end
@@ -38,6 +38,7 @@ class Ability
     can :manage, :all
     cannot :view_all_records
     cannot :destroy, :all
+    cannot :view_all_deals
     cannot :export_xls, :all
     can :read, Deal
   end
