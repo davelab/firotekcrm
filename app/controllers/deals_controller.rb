@@ -32,8 +32,6 @@ class DealsController < ApplicationController
   def new
     @deal = Deal.new
 
-    @pn = protocol_number
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @deal }
