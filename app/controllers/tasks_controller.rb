@@ -4,11 +4,11 @@ class TasksController < ApplicationController
   def index
     #@tasks = Task.all
     #TASK ASSEGNATI
-    @tasks = Task.where("user_id = ? AND done != ?", current_user.id, 1).order('due_date')
+    @tasks = Task.where("user_id = ? AND done != ?", current_user.id, 1).order('due_date').reverse_order
     #TASK DELEGATI
-    @created_tasks = Task.where("owner_id = ? AND user_id != ? AND done != ?", current_user.id, "",  1).order('due_date')
+    @created_tasks = Task.where("owner_id = ? AND user_id != ? AND done != ?", current_user.id, "",  1).order('due_date').reverse_order
     #TASK PERSONALI
-    @personal_task = Task.where("owner_id = ? AND user_id IS NULL AND done != ?", current_user.id,  1).order('due_date')
+    @personal_task = Task.where("owner_id = ? AND user_id IS NULL AND done != ?", current_user.id,  1).order('due_date').reverse_order
 
     #TASK FATTI
     @today = Date.tomorrow
