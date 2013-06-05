@@ -42,10 +42,8 @@ class DealsController < ApplicationController
 
   # GET /deals/1/edit
   def edit
-
     @deal = Deal.find(params[:id])
-
-    @pn = @deal.protocol_number
+ 
   end
 
   # POST /deals
@@ -60,8 +58,6 @@ class DealsController < ApplicationController
         format.json { render json: @deal, status: :created, location: @deal }
       else
 
-        @pn = protocol_number
-
         format.html { render action: "new" }
         format.json { render json: @deal.errors, status: :unprocessable_entity }
       end
@@ -72,7 +68,7 @@ class DealsController < ApplicationController
   # PUT /deals/1.json
   def update
     @deal = Deal.find(params[:id])
-
+    
     respond_to do |format|
       if @deal.update_attributes(params[:deal])
         format.html { redirect_to @deal, notice: 'Deal was successfully updated.' }
