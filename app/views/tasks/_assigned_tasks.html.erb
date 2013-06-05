@@ -6,7 +6,7 @@
     <td width="2%"><input type="checkbox" name="done" data-task-id="<%= task.id %>" value="1" /></td>
     <td width="13%">da: <span class="label label-info"><%= task.owner.username %></span></td>
     <td width="75%"><strong><%= task.description %></strong></td>
-    <td width="10%"><strong>Scadenza:</strong> <%= c_task.due_date.strftime('%d/%m/%Y') %></td>
+    <td width="10%"><strong>Scadenza:</strong> <%= task.due_date.strftime('%d/%m/%Y') %></td>
     <td>          
       <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                     task_path(task),
