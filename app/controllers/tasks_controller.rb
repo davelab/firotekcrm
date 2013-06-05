@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     @today = Date.tomorrow
     @week_ago = Date.today - 8
     #@done_task = Task.where({:created_at => @week_ago..@today, :done => 1})
-    @done_task = Task.where("( created_at BETWEEN ? AND ? AND done = ? ) AND owner_id = ? OR user_id = ?", current_user.id, current_user.id, @week_ago, @today, 1)
+    @done_task = Task.where("( created_at BETWEEN ? AND ? AND done = ? ) AND owner_id = ? OR user_id = ?", @week_ago, @today, 1, current_user.id, current_user.id )
 
     respond_to do |format|
       format.html # index.html.erb
