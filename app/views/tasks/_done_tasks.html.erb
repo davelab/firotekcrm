@@ -6,7 +6,7 @@
     <td width="13%">a: <span class="label"><%=   (d_task.user_id ?  d_task.assigned.username : "Tu" ) %></span> </td>
     <td width="75%"><strong><%= d_task.description %></strong></td>
     <td width="10%"><strong>fatto il:</strong> <%= d_task.updated_at.strftime('%d/%m/%Y') %></td>
-    <td width="10%"><strong>Da fare il:</strong> <%= d_task.due_date.strftime('%d/%m/%Y') %></td>
+    <td width="10%"><strong>Da fare il:</strong> <%= d_task.due_date.strftime('%d/%m/%Y') if d_task.due_date %></td>
     
   </tr>
   <% end %>

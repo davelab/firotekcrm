@@ -59,7 +59,9 @@ class TasksController < ApplicationController
 
         if params[:task][:user_id] != ""
           user = User.find(params[:task][:user_id])
-          UserMailer.new_task_assigned(user.email).deliver
+          @owner = User.find(params[:task][:owner_id])
+          @description = params[:task][:description]
+          UserMailer.new_task_assigned(user.email, @owner.username, @description ).deliver
         end
        
         format.html { redirect_to tasks_path, notice: 'Task creato correttamente.' }

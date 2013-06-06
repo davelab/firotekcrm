@@ -41,7 +41,6 @@ class DealsController < ApplicationController
   # GET /deals/1/edit
   def edit
     @deal = Deal.find(params[:id])
- 
   end
 
   # POST /deals
