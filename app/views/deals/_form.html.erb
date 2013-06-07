@@ -3,7 +3,7 @@
 
   <%= f.input :protocol_number  %>
   <%= f.input :user_id, :label => "Venditore", :collection => User.all , :value_method => :id, :label_method => :username  %>
-  <%= f.input :billed_company, :prompt => "seleziona una Società", :label => "Società intestataria", :collection => Company.all, :value_method => :id, :label_method => :name, :selected => (params[:billed_company])  %>
+  <%= f.input :billed_company, :prompt => "seleziona una Società", :label => "Società intestataria", :collection => Company.all, :value_method => :id, :label_method => :name %>
   <%= f.input :operative_company, :as => :select, :label => "Società presso cui", :collection => Company.all, :value_method => :id, :label_method => :name %>
   <%= f.input :description %>
   <%= f.input :offered_import %>
