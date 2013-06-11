@@ -3,10 +3,14 @@ class ReportsController < ApplicationController
   # GET /reports
   # GET /reports.json
   def index
+
+    @today = Date.today
+    @month_ago = Date.today - 31
+
   if can? :view_all_records, @user
-    @reports = Report.all
+    @reports = Report.where({:created_at => @month_ago..@today})
   else
-    @reports = Report.where(:user_id => current_user.id)
+    @reports = Report.where({:created_at => @month_ago..@today, :user_id => current_user.id})
   end
 
     respond_to do |format|
