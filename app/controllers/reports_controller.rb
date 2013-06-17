@@ -4,7 +4,7 @@ class ReportsController < ApplicationController
   # GET /reports.json
   def index
 
-    @today = Date.today
+    @today = Date.tomorrow
     @month_ago = Date.today - 31
 
   if can? :view_all_records, @user
