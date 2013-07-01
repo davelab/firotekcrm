@@ -8,9 +8,9 @@ class ReportsController < ApplicationController
     @month_ago = Date.today - 31
 
   if can? :view_all_records, @user
-    @reports = Report.includes(:company).where({:created_at => @month_ago..@today})
+    @reports = Report.where({:created_at => @month_ago..@today})
   else
-    @reports = Report.includes(:company).where({:created_at => @month_ago..@today, :user_id => current_user.id})
+    @reports = Report.where({:created_at => @month_ago..@today, :user_id => current_user.id})
   end
 
     respond_to do |format|
