@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
 	include ActionView::Helpers::NumberHelper
 	include ApplicationHelper
     
-	before_filter :authenticate_user!
+	before_filter :authenticate_user!, :miniprofiler
     
 
   	protect_from_forgery
