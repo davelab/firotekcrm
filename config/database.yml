@@ -12,7 +12,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: FirotekCRM_development
+  database: FirotekCRM_test
   pool: 5
   username: root
   password: D4v3@1486
