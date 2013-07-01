@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
         <td><%= deal.shipment_mode %></td>
         <td><%= truncate(deal.description, :length => 100, :separator => ' ') %></td>
         <td><span class="label label-<%= deal.status.downcase  %>"><%= deal.status %></span></td>
-        <td><%=l deal.created_at %></td>
+        <td><%=t deal.created_at %></td>
         <td><%= number_to_currency(deal.offered_import) %></td>
         <td><%= number_to_currency(deal.real_import) %></td>
 
