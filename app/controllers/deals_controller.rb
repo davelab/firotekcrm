@@ -31,7 +31,7 @@ class DealsController < ApplicationController
   # GET /deals/new.json
   def new
     @deal = Deal.new
-
+    @pn = protocol_number
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @deal }
@@ -41,6 +41,7 @@ class DealsController < ApplicationController
   # GET /deals/1/edit
   def edit
     @deal = Deal.find(params[:id])
+    @pn = @deal.protocol_number
   end
 
   # POST /deals
@@ -54,6 +55,7 @@ class DealsController < ApplicationController
         format.html { redirect_to @deal, notice: 'Deal was successfully created.' }
         format.json { render json: @deal, status: :created, location: @deal }
       else
+        @pn = protocol_number
         format.html { render action: "new" }
         format.json { render json: @deal.errors, status: :unprocessable_entity }
       end
