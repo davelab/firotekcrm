@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
         <td><%= link_to deal.protocol_number, deal_path(deal) %></td>
         <td><%= deal.user.username %></td>
         <td><%= link_to deal.billed.name, company_path(deal.billed) %></td>
-        <td><%= deal.operative.name unless deal.operative.name.empty? %></td>
+        <td><%= deal.operative.name unless deal.operative.name.blank? %></td>
         <td><%= deal.shipment_mode %></td>
         <td><%= truncate(deal.description, :length => 100, :separator => ' ') %></td>
         <td><span class="label label-<%= deal.status.downcase  %>"><%= deal.status %></span></td>
