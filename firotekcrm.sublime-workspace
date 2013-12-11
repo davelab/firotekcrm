@@ -836,6 +836,16 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/registrations_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/index.html.erb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/company.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/companies_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/firotekcrm.sublime-workspace",
@@ -844,11 +854,8 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/company_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/task.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/_form.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/progress_giornaliero_firotek.TODO",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/application.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environment.rb",
 		"/usr/local/php5/lib/php.ini",
@@ -859,13 +866,11 @@
 		"/Users/Davide/2/Packages/User/Preferences.sublime-settings",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environments/production.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/environments/development.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/report.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/database.yml",
 		"/Users/Davide/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/edit.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/tasks_controller.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_form.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/mailers/user_mailer.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/user_mailer/new_task_assigned.html.erb",
@@ -877,8 +882,6 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/_billeds.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/stylesheets/deals.css.scss",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/tasks.js.coffee",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/_deal.html.erb",
@@ -897,8 +900,6 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/_deal_pagination.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_report.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/new.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/new.html.erb",
@@ -962,8 +963,7 @@
 		"/Users/dave/Sites/RoR/FirotekCRM/app/views/reports/_form.html.erb",
 		"/Users/dave/Sites/RoR/FirotekCRM/log/development.log",
 		"/Users/dave/Sites/RoR/FirotekCRM/app/assets/stylesheets/application.css",
-		"/Users/dave/Sites/RoR/FirotekCRM/config/locales/it.yml",
-		"/Users/dave/Sites/RoR/FirotekCRM/app/views/notes/_note.html.erb"
+		"/Users/dave/Sites/RoR/FirotekCRM/config/locales/it.yml"
 	],
 	"find":
 	{
@@ -971,7 +971,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 112.0,
 		"where_history":
 		[
 			"<project>"
@@ -982,6 +982,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"can?",
+			"can manage",
+			"can all",
+			"admin",
+			"registrationcontroller",
+			"devise::registration",
+			"sign_up",
 			"require_login",
 			"if",
 			"@pn",
@@ -1102,17 +1109,10 @@
 			"params",
 			"filse",
 			"datepicker",
-			"dateFormat",
-			"datefomat",
-			"dateFormat",
-			"/",
-			"yy/",
-			"date",
-			"datefrm",
-			"class=\"span4"
+			"dateFormat"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -1126,7 +1126,7 @@
 			"\""
 		],
 		"reverse": false,
-		"show_context": true,
+		"show_context": false,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": true
@@ -1188,6 +1188,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"ab",
+				"app/models/ability.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
 			[
 				"face",
 				"firotekcrm.sublime-workspace"
@@ -1295,10 +1311,6 @@
 			[
 				"contrdeal",
 				"app/controllers/deals_controller.rb"
-			],
-			[
-				"rout",
-				"config/routes.rb"
 			],
 			[
 				"viedeal_for",
@@ -1443,10 +1455,6 @@
 			[
 				"hel",
 				"app/helpers/application_helper.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"_fom",
@@ -1661,10 +1669,6 @@
 				"app/controllers/reports_controller.rb"
 			],
 			[
-				"ro",
-				"config/routes.rb"
-			],
-			[
 				"applicacss",
 				"app/assets/stylesheets/application.css"
 			],
@@ -1695,10 +1699,6 @@
 			[
 				"cl",
 				"app/models/client.rb"
-			],
-			[
-				"migratecre",
-				"db/migrate/20130125135751_create_reports.rb"
 			]
 		],
 		"width": 0.0
