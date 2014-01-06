@@ -836,13 +836,14 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/registrations_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/config/routes.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/user.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/clients_controller.rb",
@@ -895,7 +896,6 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/schema.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/test/functional/deals_controller_test.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/test/fixtures/deals.yml",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/edit.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/_deal_pagination.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_report.html.erb",
@@ -971,7 +971,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 112.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<project>"
@@ -982,6 +982,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"edit_user_registration_pat",
 			"can?",
 			"can manage",
 			"can all",
@@ -1108,8 +1109,7 @@
 			"\"commit\"=>\"Create\"",
 			"params",
 			"filse",
-			"datepicker",
-			"dateFormat"
+			"datepicker"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1188,6 +1188,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"application.html.erb",
+				"app/views/layouts/application.html.erb"
+			],
 			[
 				"user",
 				"app/models/user.rb"
@@ -1695,10 +1699,6 @@
 			[
 				"applijs",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				"cl",
-				"app/models/client.rb"
 			]
 		],
 		"width": 0.0

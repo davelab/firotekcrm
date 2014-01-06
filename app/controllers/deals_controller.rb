@@ -101,9 +101,9 @@ class DealsController < ApplicationController
      else
       pn = last_deal.protocol_number.split('/')
       next_code = sprintf '%02d', pn[0].to_i + 1
-      next_year = year.to_i + 1 
+      
       if pn[1].to_s != year.to_s
-        pn =  next_code.to_s + "/" + next_year
+        pn =  next_code.to_s + "/" + year.to_s
       else
         pn = next_code.to_s + "/" + year.to_s
       end
