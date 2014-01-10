@@ -103,7 +103,8 @@ class DealsController < ApplicationController
       next_code = sprintf '%02d', pn[0].to_i + 1
       
       if pn[1].to_s != year.to_s
-        pn =  next_code.to_s + "/" + year.to_s
+        code_number = sprintf '%02d', 1
+        pn =  code_number  + "/" + year.to_s
       else
         pn = next_code.to_s + "/" + year.to_s
       end

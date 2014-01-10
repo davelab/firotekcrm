@@ -836,11 +836,13 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/deal.rb",
+		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/application_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/layouts/application.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/ability.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/index.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/deals_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/reports_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/controllers/registrations_controller.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/index.html.erb",
@@ -890,7 +892,6 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/assets/javascripts/deals.js.coffee",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/edit.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/new.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/models/deal.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/migrate/20130528165104_create_deals.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/deals/show.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/db/schema.rb",
@@ -899,7 +900,6 @@
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/edit.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/_deal_pagination.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/reports/_report.html.erb",
-		"/Volumes/Data/Sites/RoR/FirotekCRM/app/helpers/application_helper.rb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/companies/index.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/tasks/new.html.erb",
 		"/Volumes/Data/Sites/RoR/FirotekCRM/app/views/clients/new.html.erb",
@@ -971,7 +971,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 106.0,
 		"where_history":
 		[
 			"<project>"
@@ -979,9 +979,11 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"Fixnum",
+			"fixnum",
 			"edit_user_registration_pat",
 			"can?",
 			"can manage",
@@ -1107,9 +1109,7 @@
 			"\"commit\"=> \"Create Report\"",
 			"\"commit\"=>",
 			"\"commit\"=>\"Create\"",
-			"params",
-			"filse",
-			"datepicker"
+			"params"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1188,6 +1188,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"deal_con",
+				"app/controllers/deals_controller.rb"
+			],
+			[
+				"dea",
+				"app/models/deal.rb"
+			],
+			[
+				"helper",
+				"app/helpers/application_helper.rb"
+			],
 			[
 				"application.html.erb",
 				"app/views/layouts/application.html.erb"
@@ -1445,10 +1457,6 @@
 				"app/views/tasks/_assigned_tasks.html.erb"
 			],
 			[
-				"dea",
-				"app/models/deal.rb"
-			],
-			[
 				"dealrb",
 				"app/models/deal.rb"
 			],
@@ -1691,14 +1699,6 @@
 			[
 				"reportcont",
 				"app/controllers/reports_controller.rb"
-			],
-			[
-				"compancontr",
-				"app/controllers/companies_controller.rb"
-			],
-			[
-				"applijs",
-				"app/assets/javascripts/application.js"
 			]
 		],
 		"width": 0.0
