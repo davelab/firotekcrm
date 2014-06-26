@@ -22,7 +22,7 @@ FirotekCRM::Application.routes.draw do
   resources :clients
 
   match '/companies/clients_associated_to_company' => 'companies#clients_associated_to_company'
-  
+
   authenticated :user do
     root :to => "dashboard#index"
   end
